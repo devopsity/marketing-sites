@@ -95,12 +95,12 @@ jobs:
         run: |
           bundle exec htmlproofer ./_site \
             --checks Links,Images,Scripts \
-            --no-external
+            --disable-external
 
       - name: Link check (${{ matrix.site.id }})
         run: |
           bundle exec htmlproofer ./_site \
-            --no-external \
+            --disable-external \
             --allow-hash-href
 
       - name: Install yq
