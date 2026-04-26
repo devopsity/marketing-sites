@@ -229,7 +229,7 @@ check_sources_present() {
   local file="$1"
 
   # Check for a sources/references section heading
-  if grep -qiE '<h[2-6][^>]*>[^<]*(sources|references|citations|źródła)[^<]*</h[2-6]>' "$file" 2>/dev/null; then
+  if grep -qiE '<h[2-6][^>]*>[^<]*(sources|references|citations|[Źź]ród[łl]a)[^<]*</h[2-6]>' "$file" 2>/dev/null; then
     return 0
   fi
 
