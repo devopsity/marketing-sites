@@ -1,0 +1,43 @@
+---
+# Product/Service Page Layout — Blog Site (perfectsystem.pl)
+#
+# Required front matter fields:
+#   layout: product
+#   title: "Service page title"
+#   description: "Meta description" (120-160 chars)
+#   lang: pl
+#   content_type: product
+#   keywords: ["keyword1"]
+#   summary: "GEO summary paragraph"
+#
+# Optional front matter fields:
+#   cluster: cluster-id
+#   image: /assets/images/image.jpg
+#   devopsity_translations: {en: "https://...", pl: "https://..."}
+#   noindex: false
+layout: default
+---
+
+<article class="product-content">
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+
+            <div class="mainheading">
+                <h1 class="posttitle">{{ page.title }}</h1>
+            </div>
+
+            {% include geo-summary.html %}
+
+            {% if page.image %}
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            {% endif %}
+
+            <div class="article-post service-details">
+                {{ content }}
+            </div>
+
+        </div>
+    </div>
+</div>
+</article>

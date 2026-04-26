@@ -1,0 +1,11 @@
+{% comment %}
+  GEO Summary Include
+  Renders the GEO-optimized summary paragraph from page.summary front matter.
+  Placed immediately after H1 for LLM extraction.
+{% endcomment %}
+
+{% if page.summary %}
+<div class="geo-summary">
+  <p>{{ page.summary }}</p>
+</div>
+{% endif %}

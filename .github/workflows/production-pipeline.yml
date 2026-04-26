@@ -1,0 +1,185 @@
+# Production Pipeline — Detect changed sites, build, validate, deploy to production.
+name: Production Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # 1. Validate the site registry (sites.yml)
+  # ---------------------------------------------------------------------------
+  validate:
+    name: Validate Registry
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Validate sites.yml
+        run: |
+          source scripts/pipeline-utils.sh
+          validate_registry sites.yml
+
+  # ---------------------------------------------------------------------------
+  # 2. Detect which sites are affected by this push
+  # ---------------------------------------------------------------------------
+  detect:
+    name: Detect Changed Sites
+    runs-on: ubuntu-latest
+    needs: validate
+    outputs:
+      affected_sites: ${{ steps.detect.outputs.affected_sites }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Detect affected sites
+        id: detect
+        run: |
+          source scripts/pipeline-utils.sh
+          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD)
+          AFFECTED=$(detect_changes sites.yml "$CHANGED_FILES")
+          echo "affected_sites=$AFFECTED" >> "$GITHUB_OUTPUT"
+
+  # ---------------------------------------------------------------------------
+  # 3. Build & validate each affected site (matrix)
+  # ---------------------------------------------------------------------------
+  build-and-validate:
+    name: build/${{ matrix.site.id }}
+    runs-on: ubuntu-latest
+    needs: detect
+    if: needs.detect.outputs.affected_sites != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        site: ${{ fromJSON(needs.detect.outputs.affected_sites) }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Restore gem cache
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: gems-${{ runner.os }}-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            gems-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+
+      - name: Generate production config
+        run: |
+          printf 'url: "https://%s"\nbaseurl: ""\n' "${{ matrix.site.domain }}" > _config_production.yml
+
+      - name: Build Jekyll site
+        run: |
+          bundle exec jekyll build \
+            --source ${{ matrix.site.source_dir }} \
+            --config ${{ matrix.site.source_dir }}/_config.yml,_config_production.yml
+
+      - name: HTML validation (${{ matrix.site.id }})
+        run: |
+          bundle exec htmlproofer ./_site \
+            --check-html \
+            --disable-external
+
+      - name: Link check (${{ matrix.site.id }})
+        run: |
+          bundle exec htmlproofer ./_site \
+            --disable-external \
+            --allow-hash-href
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: SEO Validation
+        run: bash scripts/seo-validate.sh ./_site/ ${{ matrix.site.id }}
+
+      - name: GEO Validation
+        run: bash scripts/geo-validate.sh ./_site/ ${{ matrix.site.id }}
+
+      - name: Content Audit
+        run: bash scripts/content-audit.sh keywords.yml ${{ matrix.site.source_dir }}
+
+      - name: Upload SEO/GEO scorecards
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scorecards-${{ matrix.site.id }}
+          path: |
+            seo-scorecard.json
+            geo-scorecard.json
+            content-audit.json
+          retention-days: 7
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ matrix.site.id }}
+          path: ./_site
+          retention-days: 1
+
+  # ---------------------------------------------------------------------------
+  # 4. Deploy to production for each affected site (matrix)
+  # ---------------------------------------------------------------------------
+  deploy-production:
+    name: deploy/${{ matrix.site.id }}
+    runs-on: ubuntu-latest
+    needs: [detect, build-and-validate]
+    if: needs.detect.outputs.affected_sites != '[]'
+    strategy:
+      fail-fast: false
+      matrix:
+        site: ${{ fromJSON(needs.detect.outputs.affected_sites) }}
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site-${{ matrix.site.id }}
+          path: ./_site
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy to S3 production bucket
+        run: |
+          aws s3 sync ./_site/ \
+            s3://${{ matrix.site.production_bucket }}/ \
+            --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ matrix.site.cloudfront_distribution_id }} \
+            --paths "/*"

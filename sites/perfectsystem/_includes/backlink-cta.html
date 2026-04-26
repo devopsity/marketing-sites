@@ -1,0 +1,16 @@
+{% comment %}
+  Backlink CTA Include
+  Renders a contextual call-to-action block linking to devopsity.com.
+  Uses site.backlink_cta defaults, with per-page overrides via
+  page.backlink_target and page.backlink_anchor.
+{% endcomment %}
+
+{% assign cta_url = page.backlink_target | default: site.backlink_cta.url %}
+{% assign cta_text = page.backlink_anchor | default: site.backlink_cta.text %}
+
+{% if cta_url and cta_text %}
+<aside class="cta-block" role="complementary">
+  <p>{{ site.backlink_cta.text | default: cta_text }}</p>
+  <a href="{{ cta_url }}" class="cta-link">{{ cta_text }}</a>
+</aside>
+{% endif %}

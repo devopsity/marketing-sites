@@ -1,0 +1,141 @@
+{% comment %}
+  JSON-LD Structured Data Include
+  Renders appropriate JSON-LD based on page layout and front matter.
+  - Article: post, pillar layouts
+  - WebPage: landing, product layouts
+  - Organization: home page only
+  - BreadcrumbList: all non-home pages
+  - FAQPage: when page.faq is defined
+  - DefinedTerm: when page.definitions is defined
+{% endcomment %}
+
+{% if page.layout == 'post' or page.layout == 'pillar' %}
+{% assign author = site.authors[page.author] %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ author.display_name | default: author.name | default: page.author | jsonify }}
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified | default: page.date | date_to_xmlschema }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/{{ site.logo }}"
+    }
+  },
+  "description": {{ page.description | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
+  }{% if page.image %},
+  "image": "{{ site.url }}{{ site.baseurl }}/{{ page.image }}"{% endif %}
+}
+</script>
+{% endif %}
+
+{% if page.layout == 'landing' or page.layout == 'product' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "url": "{{ site.url }}{{ site.baseurl }}{{ page.url }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}{{ site.baseurl }}/{{ site.logo }}"
+    }
+  }
+}
+</script>
+{% endif %}
+
+{% if page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ site.title | jsonify }},
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "logo": "{{ site.url }}{{ site.baseurl }}/{{ site.logo }}"{% if site.social.links %},
+  "sameAs": {{ site.social.links | jsonify }}{% endif %},
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "{{ site.backlink_cta.url | default: site.url }}"
+  }
+}
+</script>
+{% endif %}
+
+{% unless page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ site.url }}{{ site.baseurl }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ page.categories[0] | default: page.content_type | default: "Page" | jsonify }},
+      "item": "{{ site.url }}{{ site.baseurl }}/{{ page.categories[0] | default: page.content_type | default: 'page' }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | jsonify }}
+    }
+  ]
+}
+</script>
+{% endunless %}
+
+{% if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.definitions %}
+{% for def in page.definitions %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": {{ def.term | jsonify }},
+  "description": {{ def.definition | jsonify }}
+}
+</script>
+{% endfor %}
+{% endif %}

@@ -1,0 +1,44 @@
+# Cleanup Preview — Remove preview files from all site preview buckets when a PR is closed.
+name: Cleanup Preview
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    name: Cleanup Preview Deployments
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Remove preview files for all sites
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          SITE_COUNT=$(yq -r '.sites | length' sites.yml)
+
+          for (( i=0; i<SITE_COUNT; i++ )); do
+            BUCKET=$(yq -r ".sites[$i].preview_bucket" sites.yml)
+            SITE_ID=$(yq -r ".sites[$i].id" sites.yml)
+
+            echo "Cleaning up preview for site '$SITE_ID' from s3://$BUCKET/pr-$PR_NUMBER/ ..."
+            aws s3 rm "s3://$BUCKET/pr-$PR_NUMBER/" --recursive || echo "WARNING: Cleanup failed for site '$SITE_ID' (bucket: $BUCKET). Continuing..."
+          done
+
+          echo "Preview cleanup complete."

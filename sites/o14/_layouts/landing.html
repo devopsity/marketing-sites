@@ -1,0 +1,41 @@
+---
+# Landing Page Layout — o14 Enterprise Site (o14.pl)
+#
+# Required front matter fields:
+#   layout: landing
+#   title: "Landing page title"
+#   description: "Meta description" (120-160 chars)
+#   lang: pl
+#   content_type: landing
+#   cluster: cluster-id
+#   keywords: ["keyword1"]
+#   summary: "GEO summary paragraph"
+#
+# Optional front matter fields:
+#   image: /assets/images/image.jpg
+#   backlink_target: "https://devopsity.com/..."
+#   backlink_anchor: "anchor text"
+#   devopsity_translations: {en: "https://...", pl: "https://..."}
+#   noindex: false
+layout: default
+---
+
+<article class="landing-content enterprise-article">
+
+    <header class="article-header">
+        <h1>{{ page.title }}</h1>
+    </header>
+
+    {% include geo-summary.html %}
+
+    {% if page.image %}
+    <img class="featured-image" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" style="max-width: 100%; height: auto; margin: 1.5rem 0;">
+    {% endif %}
+
+    <div class="article-body">
+        {{ content }}
+    </div>
+
+    {% include backlink-cta.html %}
+
+</article>

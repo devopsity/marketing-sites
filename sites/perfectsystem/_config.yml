@@ -2,14 +2,37 @@
 name: "Mediumish"
 title: "Mediumish"
 description: "Jekyll template, Medium styled, free for bloggers."
+url: "https://perfectsystem.pl"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /mediumish-theme-jekyll
+baseurl: ""
 google_analytics: 'UA-46278016-1'
 disqus: 'demowebsite'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
+lang: pl
+audience_segment: startups
+
+# SEO configuration
+author:
+  name: "PerfectSystem"
+  twitter: "perfectsystem_pl"
+twitter:
+  username: "perfectsystem_pl"
+  card: summary_large_image
+social:
+  links:
+    - "https://twitter.com/perfectsystem_pl"
+    - "https://linkedin.com/company/perfectsystem"
+
+# Backlink CTA defaults
+backlink_cta:
+  text: "Potrzebujesz pomocy z migracją? Sprawdź ofertę Devopsity →"
+  url: "https://devopsity.com/pl/services/"
+
+# Main sales page (for backlink validation)
+main_sales_page: "https://devopsity.com"
 
 # Authors
 authors:
@@ -38,7 +61,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-    
+
 # Archives
 jekyll-archives:
   enabled:
@@ -46,11 +69,49 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
-    
+
 # Pagination 
 paginate: 6
 paginate_path: /page:num/
-    
+
+# Permalink patterns per content type
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      layout: post
+      content_type: post
+      permalink: "/:categories/:title/"
+  - scope:
+      path: "_landing"
+    values:
+      layout: landing
+      content_type: landing
+      permalink: "/:title/"
+  - scope:
+      path: "_products"
+    values:
+      layout: product
+      content_type: product
+      permalink: "/services/:title/"
+  - scope:
+      path: "_info"
+    values:
+      layout: info
+      content_type: info
+      permalink: "/info/:title/"
+
+# Collections for non-post content types
+collections:
+  landing:
+    output: true
+  products:
+    output: true
+  info:
+    output: true
+  pillars:
+    output: true
+
 # Other
 markdown: kramdown
 

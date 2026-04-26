@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'pl' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ page.title }} | {{ site.name }}</title>
+
+{% seo %}
+
+{% if page.noindex %}
+<meta name="robots" content="noindex, follow">
+{% endif %}
+
+{% include hreflang.html %}
+{% include jsonld.html %}
+
+<style>
+  /* Enterprise-focused minimal styling */
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; color: #1a1a2e; margin: 0; padding: 0; }
+  .site-header { border-bottom: 2px solid #0f3460; padding: 1rem 2rem; }
+  .site-header a { color: #0f3460; text-decoration: none; font-weight: 600; }
+  .site-nav a { margin-left: 1.5rem; font-size: 0.95rem; }
+  .site-content { max-width: 960px; margin: 0 auto; padding: 2rem; }
+  .site-footer { border-top: 1px solid #e0e0e0; padding: 1.5rem 2rem; text-align: center; font-size: 0.85rem; color: #666; margin-top: 3rem; }
+  a { color: #0f3460; }
+  h1, h2, h3 { color: #16213e; }
+</style>
+</head>
+
+<body class="enterprise-site{% if page.layout %} layout-{{ page.layout }}{% endif %}">
+
+<header class="site-header">
+    <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+    <nav class="site-nav" style="display: inline;">
+        <a href="{{ site.baseurl }}/">Home</a>
+    </nav>
+</header>
+
+<main class="site-content">
+    {{ content }}
+</main>
+
+<footer class="site-footer">
+    <p>Copyright &copy; {{ site.time | date: "%Y" }} {{ site.name }}. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

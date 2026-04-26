@@ -1,0 +1,41 @@
+---
+# Informational Page Layout — Blog Site (perfectsystem.pl)
+#
+# Required front matter fields:
+#   layout: info
+#   title: "Info page title"
+#   description: "Meta description" (120-160 chars)
+#   lang: pl
+#   content_type: info
+#   keywords: ["keyword1"]
+#
+# Optional front matter fields:
+#   summary: "GEO summary paragraph"
+#   cluster: cluster-id
+#   image: /assets/images/image.jpg
+#   devopsity_translations: {en: "https://...", pl: "https://..."}
+#   noindex: false
+layout: default
+---
+
+<article class="info-content">
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+
+            {% include breadcrumbs.html %}
+
+            <div class="mainheading">
+                <h1 class="posttitle">{{ page.title }}</h1>
+            </div>
+
+            {% include geo-summary.html %}
+
+            <div class="article-post">
+                {{ content }}
+            </div>
+
+        </div>
+    </div>
+</div>
+</article>

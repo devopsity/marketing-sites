@@ -1,0 +1,88 @@
+# Site
+name: "o14"
+title: "o14"
+description: "o14.pl website"
+url: "https://o14.pl"
+baseurl: ""
+lang: pl
+audience_segment: enterprise
+
+include: ["_pages"]
+permalink: /:title/
+
+# SEO configuration
+author:
+  name: "o14"
+  twitter: "o14_pl"
+twitter:
+  username: "o14_pl"
+  card: summary_large_image
+social:
+  links:
+    - "https://twitter.com/o14_pl"
+    - "https://linkedin.com/company/o14"
+
+# Backlink CTA defaults
+backlink_cta:
+  text: "Szukasz partnera do transformacji chmurowej? Poznaj ofertę Devopsity →"
+  url: "https://devopsity.com/pl/services/"
+
+# Main sales page (for backlink validation)
+main_sales_page: "https://devopsity.com"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Permalink patterns per content type
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      layout: post
+      content_type: post
+      permalink: "/:categories/:title/"
+  - scope:
+      path: "_landing"
+    values:
+      layout: landing
+      content_type: landing
+      permalink: "/:title/"
+  - scope:
+      path: "_products"
+    values:
+      layout: product
+      content_type: product
+      permalink: "/services/:title/"
+  - scope:
+      path: "_info"
+    values:
+      layout: info
+      content_type: info
+      permalink: "/info/:title/"
+
+# Collections for non-post content types
+collections:
+  landing:
+    output: true
+  products:
+    output: true
+  info:
+    output: true
+  pillars:
+    output: true
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

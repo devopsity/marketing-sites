@@ -1,0 +1,18 @@
+{% comment %}
+  FAQ Section Include
+  Renders FAQ items from page.faq array using <details>/<summary> elements.
+  Each item should have `q` (question) and `a` (answer) fields.
+  FAQPage JSON-LD is handled by jsonld.html.
+{% endcomment %}
+
+{% if page.faq and page.faq.size > 0 %}
+<section class="faq-section" aria-label="Frequently Asked Questions">
+  <h2>FAQ</h2>
+  {% for item in page.faq %}
+  <details>
+    <summary>{{ item.q }}</summary>
+    <p>{{ item.a }}</p>
+  </details>
+  {% endfor %}
+</section>
+{% endif %}

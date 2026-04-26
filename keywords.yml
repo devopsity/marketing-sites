@@ -1,0 +1,36 @@
+# Keyword Registry — maps target keywords to clusters, sites, and audience segments.
+# Used by content-audit.sh and validation scripts during build.
+keywords:
+  - keyword: "migracja do chmury"
+    cluster: cloud-migration
+    site_id: perfectsystem
+    language: pl
+    audience_segment: startups
+    search_intent: informational
+    target_url: /migracja-do-chmury/
+    status: published
+
+  - keyword: "strategia migracji chmurowej dla enterprise"
+    cluster: cloud-migration
+    site_id: o14
+    language: pl
+    audience_segment: enterprise
+    search_intent: commercial
+    status: planned
+
+  - keyword: "automatyzacja DevOps"
+    cluster: devops-automation
+    site_id: perfectsystem
+    language: pl
+    audience_segment: startups
+    search_intent: informational
+    target_url: /automatyzacja-devops/
+    status: published
+
+  - keyword: "CI/CD pipeline dla dużych organizacji"
+    cluster: devops-automation
+    site_id: o14
+    language: pl
+    audience_segment: enterprise
+    search_intent: commercial
+    status: planned

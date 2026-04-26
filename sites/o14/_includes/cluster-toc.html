@@ -1,0 +1,41 @@
+{% comment %}
+  Cluster TOC Include
+  Auto-generates a table of contents for pillar pages by querying
+  all site pages and documents with a matching `cluster` front matter value.
+  Only renders on pages that have a `cluster` field defined.
+{% endcomment %}
+
+{% if page.cluster %}
+{% assign cluster_pages = "" | split: "" %}
+
+{% for p in site.pages %}
+  {% if p.cluster == page.cluster and p.url != page.url %}
+    {% assign cluster_pages = cluster_pages | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% for p in site.posts %}
+  {% if p.cluster == page.cluster and p.url != page.url %}
+    {% assign cluster_pages = cluster_pages | push: p %}
+  {% endif %}
+{% endfor %}
+
+{% for p in site.documents %}
+  {% if p.cluster == page.cluster and p.url != page.url %}
+    {% unless cluster_pages contains p %}
+      {% assign cluster_pages = cluster_pages | push: p %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% if cluster_pages.size > 0 %}
+<nav class="cluster-toc" aria-label="Cluster table of contents">
+  <h2>In this topic</h2>
+  <ul>
+    {% for cp in cluster_pages %}
+    <li><a href="{{ site.baseurl }}{{ cp.url }}">{{ cp.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}
+{% endif %}

@@ -1,0 +1,51 @@
+---
+# Pillar Page Layout — o14 Enterprise Site (o14.pl)
+#
+# Required front matter fields:
+#   layout: pillar
+#   title: "Pillar page title"
+#   description: "Meta description" (120-160 chars)
+#   author: author_id
+#   date: YYYY-MM-DD
+#   lang: pl
+#   content_type: pillar
+#   cluster: cluster-id (must exist in keywords.yml)
+#   keywords: ["keyword1", "keyword2"]
+#   summary: "GEO summary paragraph" (2-4 sentences)
+#
+# Optional front matter fields:
+#   last_modified: YYYY-MM-DD
+#   image: /assets/images/image.jpg
+#   faq: [{q: "Question", a: "Answer"}]
+#   definitions: [{term: "Term", definition: "Definition"}]
+#   sources: [{url: "https://...", title: "Source Title"}]
+#   devopsity_translations: {en: "https://...", pl: "https://..."}
+#   noindex: false
+layout: default
+---
+
+<article class="pillar-content enterprise-article">
+
+    <header class="article-header">
+        <h1>{{ page.title }}</h1>
+        <p class="article-meta">
+            <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+            {% if page.last_modified %}
+            &middot; Updated: <time datetime="{{ page.last_modified | date_to_xmlschema }}">{{ page.last_modified | date: "%b %-d, %Y" }}</time>
+            {% endif %}
+        </p>
+    </header>
+
+    {% include geo-summary.html %}
+
+    {% include cluster-toc.html %}
+
+    <div class="article-body">
+        {{ content }}
+    </div>
+
+    {% if page.faq %}
+        {% include faq.html %}
+    {% endif %}
+
+</article>

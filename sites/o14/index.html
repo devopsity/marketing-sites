@@ -1,0 +1,37 @@
+---
+layout: default
+title: Home
+---
+
+<h1>{{ site.name }}</h1>
+<p>{{ site.description }}</p>
+
+{% if site.posts.size > 0 %}
+<h2>Najnowsze artykuły</h2>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+    {% if post.description %}
+    <p>{{ post.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% assign pillars = site.pillars %}
+{% if pillars.size > 0 %}
+<h2>Przewodniki</h2>
+<ul>
+  {% for pillar in pillars %}
+  <li>
+    <a href="{{ pillar.url | relative_url }}">{{ pillar.title }}</a>
+    {% if pillar.description %}
+    <p>{{ pillar.description }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
