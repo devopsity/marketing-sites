@@ -94,13 +94,13 @@ jobs:
       - name: HTML validation (${{ matrix.site.id }})
         run: |
           bundle exec htmlproofer ./_site \
-            --check-html \
-            --disable-external
+            --checks Links,Images,Scripts \
+            --no-external
 
       - name: Link check (${{ matrix.site.id }})
         run: |
           bundle exec htmlproofer ./_site \
-            --disable-external \
+            --no-external \
             --allow-hash-href
 
       - name: Install yq
