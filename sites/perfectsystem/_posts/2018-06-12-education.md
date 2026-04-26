@@ -6,6 +6,20 @@ categories: [ Jekyll, tutorial ]
 image: assets/images/3.jpg
 beforetoc: "Markdown editor is a very powerful thing. In this article I'm going to show you what you can actually do with it, some tricks and tips while editing your post."
 toc: true
+summary: "A comprehensive guide to the Markdown editor's capabilities, covering special formatting (strikethrough, highlights), code blocks with syntax highlighting, reference lists, and embedding full HTML including YouTube videos. The post serves as both a tutorial and a live demonstration."
+faq:
+  - q: "How do I add syntax-highlighted code blocks in Markdown?"
+    a: "Use triple backticks followed by the language name (e.g., ```ruby) to create a fenced code block with syntax highlighting. Jekyll uses Rouge as the default syntax highlighter."
+  - q: "Can I use HTML inside a Markdown file?"
+    a: "Yes, Markdown supports inline HTML. You can write standard HTML tags directly in your Markdown content and they will render as expected."
+definitions:
+  - term: "Markdown"
+    definition: "A lightweight markup language created by John Gruber that uses plain text formatting syntax to create structured documents. It is widely used for writing content in static site generators like Jekyll."
+sources:
+  - url: "https://daringfireball.net/projects/markdown/"
+    title: "Daring Fireball — Markdown by John Gruber"
+  - url: "https://jekyllrb.com/docs/configuration/markdown/"
+    title: "Jekyll — Markdown Configuration"
 ---
 There are lots of powerful things you can do with the Markdown editor
 

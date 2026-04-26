@@ -4,6 +4,20 @@ title:  "Powerful things you can do with the Markdown editor"
 author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/16.jpg
+summary: "A hands-on guide to advanced Markdown features including special formatting like strikethrough and highlights, code blocks with syntax highlighting for multiple languages (HTML, CSS, JS, Python, Ruby, C), reference-style links, and embedding raw HTML such as YouTube videos."
+faq:
+  - q: "How do I add code blocks with syntax highlighting in Markdown?"
+    a: "Use triple backticks followed by the language identifier (e.g., ```html, ```css, ```python) to create fenced code blocks with syntax highlighting. Jekyll uses Rouge for highlighting by default."
+  - q: "Can I embed YouTube videos in a Markdown post?"
+    a: "Yes, you can write HTML directly in Markdown. Use a standard YouTube iframe embed code and it will render as expected in the final page."
+definitions:
+  - term: "Fenced Code Block"
+    definition: "A block of code in Markdown delimited by triple backticks (```) that preserves formatting and can optionally include a language identifier for syntax highlighting."
+sources:
+  - url: "https://www.markdownguide.org/extended-syntax/"
+    title: "Markdown Guide — Extended Syntax"
+  - url: "https://jekyllrb.com/docs/configuration/markdown/"
+    title: "Jekyll — Markdown Configuration"
 ---
 There are lots of powerful things you can do with the Markdown editor. If you've gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!
 

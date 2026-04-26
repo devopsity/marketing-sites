@@ -4,6 +4,16 @@ title:  "Tree of Codes"
 author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/9.jpg
+summary: "A look at the history of die-cut books, from the 1863 Red Riding Hood edition by Louis Prang to Jonathan Safran Foer's contemporary literary work Tree of Codes. The post traces how shape books evolved from children's publishing into ambitious artistic endeavors."
+faq:
+  - q: "What is Tree of Codes by Jonathan Safran Foer?"
+    a: "Tree of Codes is a novel by Jonathan Safran Foer that uses die-cut pages as a literary device. It was created by cutting out words from Bruno Schulz's The Street of Crocodiles, leaving a new story visible through the holes."
+definitions:
+  - term: "Die-Cut"
+    definition: "A manufacturing process where paper or other materials are cut into specific shapes using a die. In publishing, die-cut books have pages or covers shaped into non-rectangular forms."
+sources:
+  - url: "https://www.britannica.com/topic/publishing"
+    title: "Britannica — History of Publishing"
 ---
 The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. 
 

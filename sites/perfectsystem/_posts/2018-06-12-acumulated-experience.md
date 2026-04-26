@@ -4,6 +4,16 @@ title:  "Accumulated experience of social living"
 author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/15.jpg
+summary: "A historical look at die-cut and shape books in publishing, tracing their origins from the 1863 Red Riding Hood edition by Louis Prang through to modern examples like Jonathan Safran Foer's Tree of Codes. The post highlights how innovative book formats have evolved over more than a century."
+faq:
+  - q: "Who published the first mass-produced die-cut book?"
+    a: "Boston-based publisher Louis Prang produced the first mass-produced die-cut book in 1863 — an edition of Red Riding Hood that was part of their 'Doll Series' of five shape books."
+definitions:
+  - term: "Shape Book"
+    definition: "A book whose physical form is cut into a non-standard shape, typically following the outline of a character or object. Also known as a die-cut book, popular in children's publishing."
+sources:
+  - url: "https://www.loc.gov/collections/rare-books-and-special-collections/"
+    title: "Library of Congress — Rare Books and Special Collections"
 ---
 The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. 
 

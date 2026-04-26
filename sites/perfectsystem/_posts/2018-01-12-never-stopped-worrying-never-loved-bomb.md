@@ -4,6 +4,16 @@ title:  "Never stopped worrying or loving the bomb"
 author: sal
 categories: [ Jekyll ]
 image: assets/images/14.jpg
+summary: "An exploration of Hallam Hawksworth's early 20th-century children's science books, including The Strange Adventures of a Pebble and The Adventures of a Grain of Dust. These books personified natural objects to teach children about the natural sciences in an engaging, narrative style."
+faq:
+  - q: "Who was Hallam Hawksworth?"
+    a: "Hallam Hawksworth was the pen name of teacher Francis Blake Atkinson, who wrote children's science books in the 1920s. He was married to Eleanor Stackhouse Atkinson, author of Greyfriars Bobby."
+definitions:
+  - term: "Personification"
+    definition: "A literary device in which human qualities, characteristics, or behaviors are attributed to non-human objects, animals, or abstract concepts to make them more relatable to readers."
+sources:
+  - url: "https://www.britannica.com/art/personification"
+    title: "Britannica — Personification in Literature"
 ---
 > I’ve been through fire and water, I tell you! From my earliest pebblehood the wildest things you could imagine have been happening to this world of ours, and I have been right in the midst of them.
 

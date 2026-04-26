@@ -3,6 +3,18 @@ layout: page
 title: Mediumish Template for Jekyll
 permalink: /about
 comments: true
+summary: "Mediumish is a Jekyll template designed for blogging, compatible with GitHub Pages. This about page provides documentation links, information about the template, and ways to support the project."
+faq:
+  - q: "Is Mediumish compatible with GitHub Pages?"
+    a: "Yes, Mediumish is fully compatible with GitHub Pages. You can host your Jekyll site for free using GitHub's built-in static site hosting."
+definitions:
+  - term: "Jekyll"
+    definition: "A static site generator written in Ruby that transforms plain text files into websites. It is natively supported by GitHub Pages and widely used for blogs and documentation sites."
+sources:
+  - url: "https://jekyllrb.com/"
+    title: "Jekyll Official Website"
+  - url: "https://pages.github.com/"
+    title: "GitHub Pages"
 ---
 
 <div class="row justify-content-between">

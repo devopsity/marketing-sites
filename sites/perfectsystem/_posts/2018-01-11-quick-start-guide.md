@@ -6,6 +6,16 @@ categories: [ Jekyll, tutorial ]
 image: assets/images/12.jpg
 featured: true
 hidden: true
+summary: "This post demonstrates how to implement spoiler tags in HTML for use in Jekyll blog posts. It shows how to hide plot-sensitive content using a simple span element with a spoiler CSS class."
+faq:
+  - q: "How do I add spoiler text to a Jekyll blog post?"
+    a: "Wrap the text you want to hide in a span element with the class 'spoiler', like this: <span class=\"spoiler\">Hidden text here.</span>. The CSS will handle hiding and revealing the content."
+definitions:
+  - term: "Spoiler Tag"
+    definition: "An HTML element used to hide content that may reveal plot details or sensitive information, typically revealed on user interaction such as a click or hover."
+sources:
+  - url: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span"
+    title: "MDN Web Docs — HTML span Element"
 ---
 
 Director Roland Suso Richter's enigmatic psychological thriller (direct to video/DVD) was based upon screenwriter Michael Cooney's own play "Point of Death" - a title that gave away the film's entire plot twist premise.

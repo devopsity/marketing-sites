@@ -4,6 +4,16 @@ title:  "Press and education"
 author: sal
 categories: [ Jekyll, tutorial ]
 image: assets/images/7.jpg
+summary: "A reflection on the role of education in developing critical thinking and moral character. The post argues that education must go beyond efficiency to include ethical values, and that the press and institutions often fail to provide objective truths."
+faq:
+  - q: "What is the main argument about education in this post?"
+    a: "The post argues that education must serve two purposes: teaching critical thinking and building moral character. Intelligence without ethics can be a menace to society."
+definitions:
+  - term: "Propaganda"
+    definition: "Information, especially of a biased or misleading nature, used to promote a particular point of view or cause. The post highlights education's role in helping people recognize and resist propaganda."
+sources:
+  - url: "https://kinginstitute.stanford.edu/encyclopedia/education"
+    title: "Stanford Martin Luther King Jr. Research and Education Institute"
 ---
 Even the press, the classroom, the platform, and the pulpit in many instances do not give us objective and unbiased truths. To save man from the morass of propaganda, in my opinion, is one of the chief aims of education. Education must enable one to sift and weigh evidence, to discern the true from the false, the real from the unreal, and the facts from the fiction.
 

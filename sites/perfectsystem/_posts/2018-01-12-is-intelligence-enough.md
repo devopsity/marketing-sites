@@ -4,6 +4,16 @@ title:  "External Featured Image"
 author: sal
 categories: [ Jekyll, tutorial, web development ]
 image: "https://images.unsplash.com/photo-1541544537156-7627a7a4aa1c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a20c472bc23308e390c8ffae3dd90c60&auto=format&fit=crop&w=750&q=80"
+summary: "This post explores the purpose of education, arguing that true education must develop both critical thinking and moral character. Intelligence alone is not enough — education should combine intellectual power with ethical responsibility."
+faq:
+  - q: "What is the purpose of education according to this post?"
+    a: "The post argues that education has a two-fold purpose: to teach critical and intensive thinking, and to develop moral character. Intelligence without morals can be dangerous to society."
+definitions:
+  - term: "Critical Thinking"
+    definition: "The ability to analyze information objectively, evaluate evidence, and form reasoned judgments — distinguishing truth from falsehood and fact from fiction."
+sources:
+  - url: "https://kinginstitute.stanford.edu/encyclopedia/education"
+    title: "Stanford Martin Luther King Jr. Research and Education Institute"
 ---
 Education must also train one for quick, resolute and effective thinking. To think incisively and to think for one's self is very difficult. 
 
