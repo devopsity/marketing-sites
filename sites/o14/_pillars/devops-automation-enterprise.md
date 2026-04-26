@@ -30,13 +30,13 @@ Automatyzacja jest rdzeniem DevOps. Każdy powtarzalny proces — budowanie kodu
 
 Continuous Integration (CI) to praktyka częstego integrowania zmian w kodzie z główną gałęzią repozytorium, z automatycznym budowaniem i testowaniem po każdej zmianie. Continuous Delivery (CD) rozszerza CI o automatyczne wdrażanie na środowiska testowe i produkcyjne.
 
-W enterprise CI/CD pipeline musi obsługiwać wieloetapowe środowiska, bramki jakości, integrację z narzędziami bezpieczeństwa i koordynację między zespołami. Szczegółowe omówienie architektury pipeline znajdziesz w artykule [CI/CD pipeline w dużej organizacji](/devops-automation/ci-cd-pipeline-enterprise/).
+W enterprise CI/CD pipeline musi obsługiwać wieloetapowe środowiska, bramki jakości, integrację z narzędziami bezpieczeństwa i koordynację między zespołami. Szczegółowe omówienie architektury pipeline znajdziesz w artykule [CI/CD pipeline w dużej organizacji](/ci-cd-pipeline-enterprise/).
 
 ## Infrastructure as Code — infrastruktura jako kod
 
 Infrastructure as Code (IaC) to praktyka zarządzania infrastrukturą IT za pomocą plików konfiguracyjnych zamiast manualnych procesów. Terraform, Terragrunt i CloudFormation pozwalają definiować serwery, sieci, bazy danych i inne zasoby w kodzie, który jest wersjonowany, testowany i wdrażany jak kod aplikacyjny.
 
-W enterprise IaC wymaga przemyślanej struktury modułów, zarządzania stanem, polityk governance i integracji z pipeline CI/CD. Pełne omówienie tego tematu znajdziesz w artykule [Infrastructure as Code w enterprise](/devops-automation/infrastructure-as-code-enterprise/).
+W enterprise IaC wymaga przemyślanej struktury modułów, zarządzania stanem, polityk governance i integracji z pipeline CI/CD. Pełne omówienie tego tematu znajdziesz w artykule [Infrastructure as Code w enterprise](/infrastructure-as-code-enterprise/).
 
 ## GitOps — Git jako źródło prawdy
 
@@ -48,13 +48,13 @@ Dla enterprise GitOps daje pełną audytowalność (każda zmiana to commit), ł
 
 Kontenery (Docker) i orkiestracja (Kubernetes) stanowią warstwę uruchomieniową dla nowoczesnych aplikacji. Kontenery zapewniają spójność między środowiskami — aplikacja działa tak samo na laptopie developera, na staging i na produkcji. Kubernetes automatyzuje wdrażanie, skalowanie i zarządzanie kontenerami na dużą skalę.
 
-Wdrożenie Kubernetes w enterprise to osobny, złożony temat, który omawiamy szczegółowo w artykule [Kubernetes w enterprise](/cloud-migration/kubernetes-w-enterprise/).
+Wdrożenie Kubernetes w enterprise to osobny, złożony temat, który omawiamy szczegółowo w artykule [Kubernetes w enterprise](/kubernetes-w-enterprise/).
 
 ## Observability — widoczność systemów
 
 Observability to zdolność do zrozumienia wewnętrznego stanu systemu na podstawie jego zewnętrznych sygnałów. W środowisku enterprise z setkami mikroserwisów, observability jest warunkiem koniecznym do utrzymania niezawodności. Trzy filary — metryki, logi i distributed tracing — razem dają pełny obraz zachowania systemu.
 
-Dojrzała platforma observability pozwala przejść od alertu do przyczyny źródłowej w minutach zamiast godzin. Szczegóły budowania takiej platformy opisujemy w artykule [Observability w enterprise](/cloud-migration/observability-enterprise/).
+Dojrzała platforma observability pozwala przejść od alertu do przyczyny źródłowej w minutach zamiast godzin. Szczegóły budowania takiej platformy opisujemy w artykule [Observability w enterprise](/observability-enterprise/).
 
 ## Platforma developerska — Internal Developer Platform
 

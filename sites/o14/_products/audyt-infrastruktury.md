@@ -36,4 +36,4 @@ Każda aplikacja jest klasyfikowana według strategii migracji: rehost (przenies
 
 Wynikiem audytu jest raport zawierający pełną inwentaryzację zasobów, mapę zależności, klasyfikację aplikacji z rekomendowaną strategią migracji, oszacowanie kosztów (TCO on-premise vs. chmura), harmonogram migracji w falach i listę ryzyk z planami mitygacji.
 
-Ten raport staje się fundamentem [strategii chmurowej](/cloud-strategy-enterprise/) i pozwala podejmować świadome decyzje o kolejności i sposobie migracji poszczególnych komponentów.
+Ten raport staje się fundamentem [strategii chmurowej](/pillars/cloud-strategy-enterprise/) i pozwala podejmować świadome decyzje o kolejności i sposobie migracji poszczególnych komponentów.

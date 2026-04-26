@@ -18,7 +18,7 @@ summary: "Transformacja chmurowa to strategiczny proces przenoszenia infrastrukt
 
 Przedsiębiorstwa decydują się na transformację chmurową z konkretnych powodów biznesowych: redukcja kosztów infrastruktury, przyspieszenie time-to-market, zwiększenie skalowalności i odporności systemów. Skuteczna transformacja wymaga jednak znacznie więcej niż przeniesienie serwerów — to zmiana sposobu, w jaki organizacja buduje, wdraża i zarządza technologią.
 
-Proces zaczyna się od [strategii chmurowej](/cloud-strategy-enterprise/), która definiuje cele, priorytety i harmonogram migracji. Następnie projektuje się landing zone — bezpieczne środowisko bazowe w chmurze. Dopiero na tej podstawie rozpoczyna się właściwą migrację aplikacji i danych.
+Proces zaczyna się od [strategii chmurowej](/pillars/cloud-strategy-enterprise/), która definiuje cele, priorytety i harmonogram migracji. Następnie projektuje się landing zone — bezpieczne środowisko bazowe w chmurze. Dopiero na tej podstawie rozpoczyna się właściwą migrację aplikacji i danych.
 
 ## Kluczowe elementy transformacji
 
@@ -26,7 +26,7 @@ Audyt infrastruktury i aplikacji to pierwszy krok. Każda aplikacja jest klasyfi
 
 Architektura docelowa musi uwzględniać nie tylko bieżące potrzeby, ale też przyszły rozwój. Wielokontowa struktura AWS, sieć bazowa, zarządzanie tożsamością i polityki bezpieczeństwa — te fundamenty muszą być solidne, bo zmiana ich później jest kosztowna i ryzykowna.
 
-Automatyzacja jest kluczem do skalowalnej transformacji. [Infrastructure as Code](/devops-automation/infrastructure-as-code-enterprise/), [CI/CD pipeline](/devops-automation/ci-cd-pipeline-enterprise/) i GitOps pozwalają zarządzać infrastrukturą i wdrożeniami w sposób powtarzalny, audytowalny i szybki.
+Automatyzacja jest kluczem do skalowalnej transformacji. [Infrastructure as Code](/infrastructure-as-code-enterprise/), [CI/CD pipeline](/ci-cd-pipeline-enterprise/) i GitOps pozwalają zarządzać infrastrukturą i wdrożeniami w sposób powtarzalny, audytowalny i szybki.
 
 ## Dlaczego warto współpracować z partnerem
 

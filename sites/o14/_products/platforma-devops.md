@@ -14,7 +14,7 @@ summary: "Platforma DevOps to zintegrowany zestaw narzędzi i procesów, który 
 
 ## Czym jest platforma DevOps
 
-Platforma DevOps to wewnętrzny produkt organizacji, który dostarcza zespołom developerskim wszystko, czego potrzebują do budowania, testowania i wdrażania oprogramowania. Obejmuje [pipeline CI/CD](/devops-automation/ci-cd-pipeline-enterprise/), Infrastructure as Code, zarządzanie kontenerami, monitoring i alerting.
+Platforma DevOps to wewnętrzny produkt organizacji, który dostarcza zespołom developerskim wszystko, czego potrzebują do budowania, testowania i wdrażania oprogramowania. Obejmuje [pipeline CI/CD](/ci-cd-pipeline-enterprise/), Infrastructure as Code, zarządzanie kontenerami, monitoring i alerting.
 
 W dojrzałych organizacjach platforma DevOps ewoluuje w Internal Developer Platform (IDP) — samoobsługowy portal, przez który zespoły mogą provisionować środowiska, wdrażać aplikacje i monitorować ich stan bez angażowania zespołu operacyjnego.
 
@@ -22,15 +22,15 @@ W dojrzałych organizacjach platforma DevOps ewoluuje w Internal Developer Platf
 
 ### CI/CD Pipeline
 
-Zautomatyzowany proces budowania, testowania i wdrażania kodu. W enterprise pipeline musi obsługiwać wiele języków programowania, wieloetapowe środowiska, bramki jakości i integrację z narzędziami bezpieczeństwa. Szczegóły projektowania pipeline opisujemy w artykule o [CI/CD w enterprise](/devops-automation/ci-cd-pipeline-enterprise/).
+Zautomatyzowany proces budowania, testowania i wdrażania kodu. W enterprise pipeline musi obsługiwać wiele języków programowania, wieloetapowe środowiska, bramki jakości i integrację z narzędziami bezpieczeństwa. Szczegóły projektowania pipeline opisujemy w artykule o [CI/CD w enterprise](/ci-cd-pipeline-enterprise/).
 
 ### Infrastructure as Code
 
-Zarządzanie infrastrukturą za pomocą kodu — Terraform, Terragrunt, CloudFormation. Platforma dostarcza gotowe moduły infrastruktury zgodne ze standardami organizacji, które zespoły mogą wykorzystywać bez głębokiej wiedzy o infrastrukturze. Więcej o podejściu IaC w artykule o [Infrastructure as Code w enterprise](/devops-automation/infrastructure-as-code-enterprise/).
+Zarządzanie infrastrukturą za pomocą kodu — Terraform, Terragrunt, CloudFormation. Platforma dostarcza gotowe moduły infrastruktury zgodne ze standardami organizacji, które zespoły mogą wykorzystywać bez głębokiej wiedzy o infrastrukturze. Więcej o podejściu IaC w artykule o [Infrastructure as Code w enterprise](/infrastructure-as-code-enterprise/).
 
 ### Orkiestracja kontenerów
 
-[Kubernetes](/cloud-migration/kubernetes-w-enterprise/) jako warstwa uruchomieniowa dla mikroserwisów, z gotowymi szablonami deploymentów, politykami bezpieczeństwa i zintegrowanym monitoringiem. Zespoły dostarczają obraz kontenera, platforma zajmuje się resztą.
+[Kubernetes](/kubernetes-w-enterprise/) jako warstwa uruchomieniowa dla mikroserwisów, z gotowymi szablonami deploymentów, politykami bezpieczeństwa i zintegrowanym monitoringiem. Zespoły dostarczają obraz kontenera, platforma zajmuje się resztą.
 
 ### Observability
 

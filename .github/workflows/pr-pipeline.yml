@@ -95,13 +95,15 @@ jobs:
         run: |
           bundle exec htmlproofer ./_site \
             --checks Links,Images,Scripts \
-            --disable-external
+            --disable-external \
+            --swap-urls "^/pr-${{ github.event.pull_request.number }}:"
 
       - name: Link check (${{ matrix.site.id }})
         run: |
           bundle exec htmlproofer ./_site \
             --disable-external \
-            --allow-hash-href
+            --allow-hash-href \
+            --swap-urls "^/pr-${{ github.event.pull_request.number }}:"
 
       - name: Install yq
         run: |
