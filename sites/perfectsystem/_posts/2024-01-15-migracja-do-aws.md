@@ -53,7 +53,7 @@ Amazon Web Services to największa platforma chmurowa na świecie, z ponad 200 u
 
 W porównaniu z Azure i Google Cloud, AWS wyróżnia się najszerszą ofertą usług, największą społecznością developerów i najlepszą dostępnością specjalistów na rynku pracy. To ostatnie jest szczególnie istotne dla startupów — łatwiej znaleźć inżyniera z doświadczeniem w AWS niż w alternatywnych platformach.
 
-Jeśli szukasz kompleksowego wprowadzenia do tematu migracji chmurowej, zapoznaj się z naszym [kompletnym przewodnikiem po migracji do chmury](/migracja-do-chmury/), który omawia wszystkie strategie i dostawców.
+Jeśli szukasz kompleksowego wprowadzenia do tematu migracji chmurowej, zapoznaj się z naszym [kompletnym przewodnikiem po migracji do chmury](/pillars/migracja-do-chmury/), który omawia wszystkie strategie i dostawców.
 
 ## Krok 1 — Audyt istniejącej infrastruktury
 
@@ -139,7 +139,7 @@ Migracja do AWS to inwestycja, która zwraca się szybko — niższe koszty oper
 
 AWS to dojrzała platforma z ogromnym ekosystemem, ale ta dojrzałość oznacza też złożoność. Nie musisz znać wszystkich 200+ usług — zacznij od podstaw (EC2, RDS, S3, VPC) i rozszerzaj wiedzę w miarę potrzeb. Społeczność AWS jest jedną z największych w branży, więc na większość pytań znajdziesz odpowiedź w dokumentacji, na Stack Overflow lub w dedykowanych forach.
 
-Więcej o strategiach migracji chmurowej znajdziesz w naszym [kompletnym przewodniku po migracji do chmury](/migracja-do-chmury/).
+Więcej o strategiach migracji chmurowej znajdziesz w naszym [kompletnym przewodniku po migracji do chmury](/pillars/migracja-do-chmury/).
 
 ## Źródła
 
