@@ -24,6 +24,11 @@ definitions:
     definition: "Praktyka zarządzania i provisionowania infrastruktury IT za pomocą plików konfiguracyjnych, które są wersjonowane, testowane i wdrażane jak kod aplikacyjny."
   - term: "Blast radius"
     definition: "Zakres potencjalnego wpływu awarii lub błędnej zmiany. W kontekście IaC — ile zasobów może zostać dotkniętych przez pojedynczą operację terraform apply."
+sources:
+  - url: "https://developer.hashicorp.com/terraform/docs"
+    title: "Terraform Documentation"
+  - url: "https://terragrunt.gruntwork.io/docs/"
+    title: "Terragrunt Documentation"
 ---
 
 ## Czym jest Infrastructure as Code w kontekście enterprise

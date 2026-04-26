@@ -8,6 +8,13 @@ keywords:
   - "o14"
   - "transformacja chmurowa"
   - "DevOps enterprise"
+summary: "o14.pl to portal wiedzy skierowany do liderów technologicznych i architektów IT w dużych organizacjach. Publikujemy praktyczne przewodniki, analizy i materiały edukacyjne dotyczące transformacji chmurowej, praktyk DevOps i nowoczesnej architektury IT."
+faq:
+  - q: "Dla kogo jest portal o14.pl?"
+    a: "o14.pl jest skierowany do liderów technologicznych, architektów IT i inżynierów DevOps w dużych organizacjach, którzy planują lub realizują transformację chmurową i wdrażanie praktyk DevOps."
+definitions:
+  - term: "GEO"
+    definition: "Generative Engine Optimization — praktyka optymalizacji treści pod kątem generatywnych silników AI, aby były łatwiej cytowane i referencjonowane przez modele językowe."
 ---
 
 ## Kim jesteśmy

@@ -10,6 +10,19 @@ keywords:
   - "wdrożenie DevOps"
   - "Internal Developer Platform"
 summary: "Platforma DevOps to zintegrowany zestaw narzędzi i procesów, który umożliwia zespołom developerskim szybkie i bezpieczne dostarczanie oprogramowania. W środowisku enterprise platforma musi obsługiwać dziesiątki zespołów, setki mikroserwisów i rygorystyczne wymagania bezpieczeństwa."
+faq:
+  - q: "Czym jest Internal Developer Platform?"
+    a: "Internal Developer Platform (IDP) to samoobsługowy portal, przez który zespoły developerskie mogą provisionować środowiska, wdrażać aplikacje i monitorować ich stan bez angażowania zespołu operacyjnego. Łączy CI/CD, IaC, Kubernetes i observability w spójne doświadczenie."
+definitions:
+  - term: "Internal Developer Platform"
+    definition: "Samoobsługowa platforma wewnętrzna, która abstrahuje złożoność infrastruktury i dostarcza zespołom developerskim gotowe narzędzia do budowania, testowania i wdrażania aplikacji."
+  - term: "DevOps"
+    definition: "Zestaw praktyk łączących rozwój oprogramowania (Dev) z operacjami IT (Ops) w celu skrócenia cyklu dostarczania zmian przy zachowaniu wysokiej jakości."
+sources:
+  - url: "https://internaldeveloperplatform.org/"
+    title: "Internal Developer Platform"
+  - url: "https://www.gartner.com/en/articles/what-is-platform-engineering"
+    title: "Gartner — What Is Platform Engineering"
 ---
 
 ## Czym jest platforma DevOps

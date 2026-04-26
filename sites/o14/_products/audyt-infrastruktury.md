@@ -10,6 +10,19 @@ keywords:
   - "cloud readiness assessment"
   - "ocena gotowości chmurowej"
 summary: "Audyt infrastruktury IT to systematyczna ocena istniejących systemów, aplikacji i procesów pod kątem gotowości do migracji chmurowej. Obejmuje inwentaryzację zasobów, analizę zależności, klasyfikację aplikacji i oszacowanie kosztów transformacji."
+faq:
+  - q: "Ile trwa audyt infrastruktury IT?"
+    a: "Audyt infrastruktury w średniej wielkości organizacji trwa zazwyczaj od 4 do 8 tygodni. Czas zależy od liczby systemów, dostępności dokumentacji i zaangażowania zespołów technicznych."
+definitions:
+  - term: "6R"
+    definition: "Sześć strategii migracji aplikacji do chmury: Rehost (lift and shift), Replatform (lift and reshape), Refactor (re-architect), Repurchase (zamiana na SaaS), Retire (wycofanie), Retain (pozostawienie on-premise)."
+  - term: "TCO"
+    definition: "Total Cost of Ownership — całkowity koszt posiadania, obejmujący koszty zakupu, utrzymania, operacji i wycofania infrastruktury IT."
+sources:
+  - url: "https://aws.amazon.com/cloud-migration/how-to-migrate/"
+    title: "AWS How to Migrate"
+  - url: "https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-readiness/"
+    title: "AWS Migration Readiness Assessment"
 ---
 
 ## Na czym polega audyt infrastruktury

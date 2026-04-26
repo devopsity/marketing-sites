@@ -17,6 +17,16 @@ summary: "Strategia chmurowa dla przedsiębiorstw to wieloetapowy plan transform
 faq:
   - q: "Od czego zacząć budowanie strategii chmurowej w przedsiębiorstwie?"
     a: "Pierwszym krokiem jest audyt istniejącej infrastruktury i aplikacji, określenie celów biznesowych migracji oraz wybór modelu operacyjnego chmury (publiczna, prywatna, hybrydowa). Na tej podstawie tworzy się roadmapę migracji z podziałem na fazy."
+definitions:
+  - term: "Landing zone"
+    definition: "Bezpieczne, wielokontowe środowisko bazowe w chmurze, przygotowane zgodnie z najlepszymi praktykami, stanowiące fundament dla migracji aplikacji i danych."
+  - term: "FinOps"
+    definition: "Praktyka zarządzania kosztami chmury łącząca finanse, technologię i biznes w celu maksymalizacji wartości z inwestycji chmurowych."
+sources:
+  - url: "https://aws.amazon.com/cloud-migration/"
+    title: "AWS Cloud Migration"
+  - url: "https://www.finops.org/introduction/what-is-finops/"
+    title: "FinOps Foundation — What is FinOps"
 ---
 
 ## Czym jest strategia chmurowa dla przedsiębiorstw

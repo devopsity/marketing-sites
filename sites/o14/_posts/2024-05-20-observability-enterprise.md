@@ -22,6 +22,11 @@ definitions:
     definition: "Zdolność do wnioskowania o wewnętrznym stanie systemu na podstawie jego zewnętrznych sygnałów — metryk, logów i śladów rozproszonych (traces)."
   - term: "OpenTelemetry"
     definition: "Otwarty standard i zestaw narzędzi do zbierania danych telemetrycznych (metryk, logów, traces) z aplikacji, niezależny od konkretnego backendu observability."
+sources:
+  - url: "https://opentelemetry.io/docs/"
+    title: "OpenTelemetry Documentation"
+  - url: "https://prometheus.io/docs/introduction/overview/"
+    title: "Prometheus Overview"
 ---
 
 ## Trzy filary observability

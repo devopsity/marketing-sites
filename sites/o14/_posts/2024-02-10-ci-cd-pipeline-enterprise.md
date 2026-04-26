@@ -24,6 +24,11 @@ definitions:
     definition: "Continuous Integration / Continuous Delivery — praktyka automatycznego budowania, testowania i wdrażania kodu po każdej zmianie w repozytorium."
   - term: "Pipeline as Code"
     definition: "Podejście polegające na definiowaniu konfiguracji pipeline w plikach wersjonowanych razem z kodem źródłowym, zamiast konfiguracji przez interfejs graficzny."
+sources:
+  - url: "https://dora.dev/"
+    title: "DORA — DevOps Research and Assessment"
+  - url: "https://docs.github.com/en/actions"
+    title: "GitHub Actions Documentation"
 ---
 
 ## Czym jest CI/CD pipeline w kontekście enterprise

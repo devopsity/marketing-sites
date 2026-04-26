@@ -299,6 +299,22 @@ validate_page() {
   local passed_checks=0
 
   # --- Check 1: Summary paragraph present (geo-summary div) ---
+  local content_type
+  content_type=$(detect_content_type "$file")
+
+  # Skip GEO scoring for non-content pages (unknown content type)
+  if [[ "$content_type" == "unknown" ]]; then
+    jq -n \
+      --arg url "$url" \
+      '{
+        url: $url,
+        geo_checks: {},
+        geo_score: 100,
+        warnings: ["Skipped: non-content page"]
+      }'
+    return 0
+  fi
+
   local summary_present=false
   if check_summary_paragraph "$file"; then
     summary_present=true
@@ -349,8 +365,6 @@ validate_page() {
   total_checks=$((total_checks + 1))
 
   # --- Check 6: Word count ---
-  local content_type
-  content_type=$(detect_content_type "$file")
   local wc_min
   wc_min=$(get_word_count_min "$content_type")
   local word_count

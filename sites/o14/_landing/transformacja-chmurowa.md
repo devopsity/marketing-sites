@@ -12,6 +12,19 @@ keywords:
 backlink_target: "https://devopsity.com/pl/services/"
 backlink_anchor: "oferta transformacji chmurowej Devopsity"
 summary: "Transformacja chmurowa to strategiczny proces przenoszenia infrastruktury IT, aplikacji i danych do chmury publicznej, prywatnej lub hybrydowej. Dla przedsiębiorstw oznacza to nie tylko zmianę technologii, ale fundamentalną reorganizację procesów IT, modelu operacyjnego i kompetencji zespołów."
+faq:
+  - q: "Ile trwa transformacja chmurowa w dużej organizacji?"
+    a: "Pełna transformacja chmurowa w enterprise trwa zazwyczaj od 12 do 36 miesięcy, w zależności od rozmiaru infrastruktury, liczby aplikacji i poziomu dojrzałości organizacji. Pierwsze korzyści widoczne są już po kilku miesiącach od rozpoczęcia migracji pilotażowej."
+definitions:
+  - term: "Landing zone"
+    definition: "Bezpieczne, wielokontowe środowisko bazowe w chmurze, przygotowane zgodnie z najlepszymi praktykami, stanowiące fundament dla migracji aplikacji."
+  - term: "6R"
+    definition: "Sześć strategii migracji aplikacji do chmury: Rehost, Replatform, Refactor, Repurchase, Retire, Retain."
+sources:
+  - url: "https://aws.amazon.com/cloud-migration/"
+    title: "AWS Cloud Migration"
+  - url: "https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-readiness/"
+    title: "AWS Migration Readiness"
 ---
 
 ## Transformacja chmurowa — od strategii do realizacji

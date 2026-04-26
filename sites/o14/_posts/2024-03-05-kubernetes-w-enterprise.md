@@ -22,6 +22,11 @@ definitions:
     definition: "Model współdzielenia klastra Kubernetes przez wiele zespołów lub aplikacji z zachowaniem izolacji zasobów, sieci i uprawnień."
   - term: "Control plane"
     definition: "Warstwa zarządzająca klastrem Kubernetes, odpowiedzialna za planowanie podów, zarządzanie stanem klastra i obsługę API."
+sources:
+  - url: "https://kubernetes.io/docs/concepts/overview/"
+    title: "Kubernetes Documentation — Overview"
+  - url: "https://aws.amazon.com/eks/"
+    title: "Amazon Elastic Kubernetes Service"
 ---
 
 ## Dlaczego enterprise wybiera Kubernetes

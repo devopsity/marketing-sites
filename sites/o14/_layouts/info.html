@@ -32,4 +32,11 @@ layout: default
         {{ content }}
     </div>
 
+    {% include definitions.html %}
+    {% include sources.html %}
+
+    {% if page.faq %}
+        {% include faq.html %}
+    {% endif %}
+
 </article>

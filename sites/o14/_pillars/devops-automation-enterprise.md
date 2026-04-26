@@ -18,6 +18,18 @@ faq:
     a: "Najlepszym punktem wyjścia jest automatyzacja procesu budowania i wdrażania (CI/CD) dla jednego zespołu pilotażowego. Po wypracowaniu wzorców i zdobyciu doświadczenia, praktyki rozszerza się na kolejne zespoły. Równolegle warto wdrożyć Infrastructure as Code dla nowych zasobów infrastrukturalnych."
   - q: "Ile czasu zajmuje transformacja DevOps w enterprise?"
     a: "Osiągnięcie dojrzałości DevOps w dużej organizacji to proces trwający 12-24 miesięcy. Pierwsze rezultaty (szybsze wdrożenia, mniej awarii) widoczne są już po 2-3 miesiącach od wdrożenia podstawowych praktyk CI/CD."
+definitions:
+  - term: "DevOps"
+    definition: "Zestaw praktyk łączących rozwój oprogramowania (Dev) z operacjami IT (Ops) w celu skrócenia cyklu dostarczania zmian przy zachowaniu wysokiej jakości i niezawodności."
+  - term: "DORA metrics"
+    definition: "Cztery kluczowe metryki efektywności DevOps: częstotliwość wdrożeń, czas od commita do produkcji, wskaźnik awarii po wdrożeniu i czas odzyskiwania po awarii."
+  - term: "GitOps"
+    definition: "Model operacyjny, w którym stan infrastruktury i aplikacji jest definiowany deklaratywnie w repozytorium Git i automatycznie synchronizowany z rzeczywistym stanem."
+sources:
+  - url: "https://dora.dev/"
+    title: "DORA — DevOps Research and Assessment"
+  - url: "https://internaldeveloperplatform.org/"
+    title: "Internal Developer Platform"
 ---
 
 ## Czym jest automatyzacja DevOps w kontekście enterprise
