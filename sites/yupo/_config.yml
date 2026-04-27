@@ -1,0 +1,86 @@
+# Site
+name: "Yupo.pl Blog"
+title: "Yupo.pl Blog"
+description: "Blog o hostingu, domenach, serwerach i bezpieczeństwie IT dla firm"
+url: "https://blog.yupo.pl"
+baseurl: ""
+lang: pl
+audience_segment: smb
+
+include: ["_pages"]
+permalink: /:title/
+
+# SEO configuration
+author:
+  name: "Yupo.pl"
+
+# Authors
+authors:
+  george:
+    display_name: "George"
+    description: "Założyciel Yupo.pl. Od ponad 20 lat w branży hostingowej i IT."
+
+# Backlink CTA defaults
+backlink_cta:
+  text: "Szukasz niezawodnego hostingu? Sprawdź ofertę Yupo.pl →"
+  url: "https://www.yupo.pl"
+
+# Main sales page (for backlink validation)
+main_sales_page: "https://www.yupo.pl"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# Permalink patterns per content type
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      layout: post
+      content_type: post
+      permalink: "/:categories/:title/"
+  - scope:
+      path: "_landing"
+    values:
+      layout: landing
+      content_type: landing
+      permalink: "/:title/"
+  - scope:
+      path: "_products"
+    values:
+      layout: product
+      content_type: product
+      permalink: "/services/:title/"
+  - scope:
+      path: "_info"
+    values:
+      layout: info
+      content_type: info
+      permalink: "/info/:title/"
+
+# Collections for non-post content types
+collections:
+  landing:
+    output: true
+  products:
+    output: true
+  info:
+    output: true
+  pillars:
+    output: true
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

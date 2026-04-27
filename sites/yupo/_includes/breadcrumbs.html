@@ -1,0 +1,13 @@
+{% unless page.url == "/" %}
+<nav aria-label="Breadcrumb" class="breadcrumbs">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{{ site.baseurl }}/">Home</a></li>
+    {% if page.categories and page.categories.size > 0 %}
+    <li class="breadcrumb-item"><a href="{{ site.baseurl }}/categories#{{ page.categories[0] | slugify }}">{{ page.categories[0] }}</a></li>
+    {% elsif page.content_type %}
+    <li class="breadcrumb-item">{{ page.content_type | capitalize }}</li>
+    {% endif %}
+    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+  </ol>
+</nav>
+{% endunless %}

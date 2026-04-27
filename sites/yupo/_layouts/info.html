@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="info-content enterprise-article">
+
+    {% include breadcrumbs.html %}
+
+    <header class="article-header">
+        <h1>{{ page.title }}</h1>
+    </header>
+
+    {% include geo-summary.html %}
+
+    <div class="article-body">
+        {{ content }}
+    </div>
+
+    {% include definitions.html %}
+    {% include sources.html %}
+
+    {% if page.faq %}
+        {% include faq.html %}
+    {% endif %}
+
+</article>

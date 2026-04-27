@@ -18,6 +18,10 @@ dependency "o14" {
   config_path = "../o14"
 }
 
+dependency "yupo" {
+  config_path = "../yupo"
+}
+
 inputs = {
   aws_region              = local.common.locals.aws_region
   github_org              = "devopsity"
@@ -25,5 +29,6 @@ inputs = {
   site_deploy_policy_arns = [
     dependency.perfectsystem.outputs.iam_deploy_policy_arn,
     dependency.o14.outputs.iam_deploy_policy_arn,
+    dependency.yupo.outputs.iam_deploy_policy_arn,
   ]
 }
