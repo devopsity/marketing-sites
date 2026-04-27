@@ -2,7 +2,7 @@
 layout: pillar
 title: "Automatyzacja DevOps dla startupów — kompletny przewodnik"
 description: "Kompletny przewodnik po automatyzacji DevOps dla startupów. CI/CD, Infrastructure as Code, konteneryzacja, monitoring i bezpieczeństwo pipeline — wszystko w jednym miejscu."
-author: sal
+author: george
 date: 2024-02-01
 last_modified: 2024-05-10
 lang: pl
@@ -25,6 +25,8 @@ definitions:
     definition: "Zbiór praktyk łączących rozwój oprogramowania (Dev) z operacjami IT (Ops), mający na celu skrócenie cyklu dostarczania zmian przy jednoczesnym zapewnieniu wysokiej jakości i stabilności systemów."
   - term: "Pipeline CI/CD"
     definition: "Zautomatyzowany przepływ pracy wykonujący przy każdej zmianie w kodzie sekwencję kroków: budowanie, testowanie, analiza jakości i wdrażanie aplikacji na docelowe środowisko."
+backlink_target: "https://devopsity.com/pl/uslugi/ci-cd/"
+backlink_anchor: "automatyzacja CI/CD z Devopsity"
 sources:
   - url: "https://about.gitlab.com/topics/devops/"
     title: "GitLab — What is DevOps?"
@@ -186,7 +188,7 @@ Automatyzacja DevOps i migracja do chmury to dwa procesy, które wzajemnie się 
 
 Jeśli planujesz lub przeprowadzasz migrację do chmury, zapoznaj się z naszym [kompletnym przewodnikiem po migracji do chmury dla startupów](/pillars/migracja-do-chmury/), który omawia strategie, koszty i najlepsze praktyki. Automatyzacja DevOps opisana w tym przewodniku jest naturalnym uzupełnieniem procesu migracji.
 
-Warto też rozważyć nasze usługi wsparcia — [wdrożenie CI/CD i automatyzacji DevOps](/services/wdrozenie-ci-cd/) to kompleksowa usługa obejmująca konfigurację pipeline, IaC, konteneryzację i monitoring dopasowane do potrzeb Twojego startupu.
+Warto też rozważyć nasze usługi wsparcia — [wdrożenie CI/CD i automatyzacji DevOps](/services/wdrozenie-ci-cd/) to kompleksowa usługa obejmująca konfigurację pipeline, IaC, konteneryzację i monitoring dopasowane do potrzeb Twojego startupu. Jeśli szukasz doświadczonego partnera, sprawdź [automatyzację CI/CD z Devopsity](https://devopsity.com/pl/uslugi/ci-cd/) — zespół pomoże zaprojektować i wdrożyć pipeline dopasowany do skali Twojego zespołu.
 
 ## Podsumowanie — automatyzacja jako przewaga konkurencyjna
 

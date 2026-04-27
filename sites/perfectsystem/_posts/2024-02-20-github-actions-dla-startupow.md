@@ -2,7 +2,7 @@
 layout: post
 title: "GitHub Actions dla startupów — jak zbudować pipeline CI/CD"
 description: "Praktyczny przewodnik po GitHub Actions dla startupów. Konfiguracja pipeline CI/CD krok po kroku — od pierwszego workflow po wdrożenie na produkcję."
-author: sal
+author: george
 date: 2024-02-20
 last_modified: 2024-03-01
 lang: pl
@@ -19,7 +19,7 @@ tags:
   - github-actions
   - ci-cd
   - automatyzacja
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/uslugi/ci-cd/"
 backlink_anchor: "wdrożenie CI/CD z Devopsity"
 summary: "GitHub Actions to wbudowany w GitHub system CI/CD, który pozwala automatyzować budowanie, testowanie i wdrażanie aplikacji bezpośrednio z repozytorium. Dla startupów to najszybsza droga do profesjonalnego pipeline — darmowy tier oferuje 2000 minut miesięcznie, konfiguracja odbywa się w plikach YAML, a marketplace zawiera tysiące gotowych akcji."
 faq:
@@ -181,7 +181,7 @@ Używaj oficjalnych akcji GitHub (actions/checkout, actions/setup-node, actions/
 
 Dokumentuj workflow w komentarzach YAML. Za trzy miesiące nie będziesz pamiętać, dlaczego dodałeś ten konkretny krok. Komentarz wyjaśniający „dlaczego" (nie „co") oszczędza godziny debugowania.
 
-Jeśli potrzebujesz wsparcia w konfiguracji pipeline CI/CD, rozważ [wdrożenie CI/CD z Devopsity](https://devopsity.com/pl/services/) — zespół specjalistów pomoże zaprojektować i wdrożyć pipeline dopasowany do potrzeb Twojego startupu, od prostego CI po pełny CD z automatycznym rollbackiem.
+Jeśli potrzebujesz wsparcia w konfiguracji pipeline CI/CD, rozważ [wdrożenie CI/CD z Devopsity](https://devopsity.com/pl/uslugi/ci-cd/) — zespół specjalistów pomoże zaprojektować i wdrożyć pipeline dopasowany do potrzeb Twojego startupu, od prostego CI po pełny CD z automatycznym rollbackiem.
 
 Warto też zapoznać się z naszą ofertą [wdrożenia CI/CD i automatyzacji DevOps](/services/wdrozenie-ci-cd/), która obejmuje kompleksową konfigurację pipeline, Infrastructure as Code i monitoring.
 

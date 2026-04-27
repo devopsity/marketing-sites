@@ -10,7 +10,7 @@ keywords:
   - "wdrożenie CI/CD"
   - "automatyzacja DevOps"
   - "pipeline CI/CD"
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/uslugi/ci-cd/"
 backlink_anchor: "zamów wdrożenie CI/CD z Devopsity"
 summary: "Wdrożenie CI/CD to proces budowy automatycznego pipeline, który kompiluje, testuje i wdraża aplikację przy każdej zmianie w kodzie. Dla startupów oznacza to szybsze dostarczanie nowych funkcji, mniej błędów na produkcji i eliminację ręcznych procesów release. Usługa obejmuje konfigurację pipeline, Infrastructure as Code, konteneryzację i monitoring — dopasowane do skali i potrzeb zespołu."
 faq:
@@ -100,4 +100,4 @@ Dla startupów planujących migrację do chmury, CI/CD jest naturalnym uzupełni
 
 Jeśli Twój startup wdraża ręcznie, traci czas na powtarzalne zadania i ryzykuje błędy przy każdym release — czas na automatyzację. Sprawdź też nasz artykuł o [migracji do AWS](/chmura/migracja-do-aws/), który pokazuje, jak CI/CD wspiera proces migracji w praktyce.
 
-[Zamów wdrożenie CI/CD z Devopsity](https://devopsity.com/pl/services/) — zaprojektujemy i zbudujemy pipeline dopasowany do Twojego stosu technologicznego i skali zespołu.
+[Zamów wdrożenie CI/CD z Devopsity](https://devopsity.com/pl/uslugi/ci-cd/) — zaprojektujemy i zbudujemy pipeline dopasowany do Twojego stosu technologicznego i skali zespołu.

@@ -11,7 +11,7 @@ keywords:
   - "Infrastructure as Code enterprise"
   - "Terraform enterprise"
   - "IaC governance"
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/uslugi/konsulting/"
 backlink_anchor: "doradztwo IaC od Devopsity"
 summary: "Infrastructure as Code to praktyka zarządzania infrastrukturą IT za pomocą plików konfiguracyjnych zamiast manualnych procesów. W środowisku enterprise IaC wymaga przemyślanej struktury modułów, zarządzania stanem, polityk governance i integracji z procesami CI/CD organizacji."
 faq:
@@ -83,6 +83,6 @@ W pipeline CI/CD testy statyczne uruchamiamy przy każdym PR, a testy integracyj
 
 Wdrożenie IaC w organizacji z istniejącą infrastrukturą to wyzwanie. Terraform import pozwala zaimportować istniejące zasoby do stanu, ale wymaga ręcznego napisania odpowiadającego kodu. Proces jest żmudny, ale konieczny — bez niego organizacja utrzymuje dwa źródła prawdy o infrastrukturze.
 
-Sprawdzone podejście to migracja inkrementalna: nowe zasoby tworzymy wyłącznie przez IaC, a istniejące importujemy stopniowo, zaczynając od najbardziej krytycznych komponentów. [Devopsity pomaga organizacjom enterprise w projektowaniu i wdrażaniu praktyk IaC](https://devopsity.com/pl/services/), od struktury modułów po integrację z pipeline CI/CD.
+Sprawdzone podejście to migracja inkrementalna: nowe zasoby tworzymy wyłącznie przez IaC, a istniejące importujemy stopniowo, zaczynając od najbardziej krytycznych komponentów. [Devopsity pomaga organizacjom enterprise w projektowaniu i wdrażaniu praktyk IaC](https://devopsity.com/pl/uslugi/konsulting/), od struktury modułów po integrację z pipeline CI/CD.
 
 Kluczowe jest, aby IaC nie był projektem jednorazowym, ale ciągłą praktyką. Infrastruktura ewoluuje razem z aplikacjami i potrzebami biznesowymi — kod infrastruktury musi ewoluować razem z nią.

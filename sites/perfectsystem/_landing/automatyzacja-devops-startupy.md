@@ -10,7 +10,7 @@ keywords:
   - "automatyzacja DevOps"
   - "DevOps startup"
   - "CI/CD dla startupów"
-backlink_target: "https://devopsity.com"
+backlink_target: "https://devopsity.com/pl/uslugi/ci-cd/"
 backlink_anchor: "usługi DevOps od Devopsity"
 summary: "Automatyzacja DevOps to zestaw praktyk i narzędzi, które pozwalają startupom szybciej wdrażać zmiany, ograniczać błędy ludzkie i skalować infrastrukturę bez proporcjonalnego wzrostu zespołu. Od pipeline CI/CD przez Infrastructure as Code po automatyczny monitoring — każdy z tych elementów eliminuje ręczną pracę i przyspiesza cykl rozwoju produktu."
 faq:
@@ -96,4 +96,4 @@ Nie próbuj wdrożyć wszystkiego naraz. Pragmatyczna ścieżka dla startupu wyg
 
 Każdy z tych kroków daje natychmiastową wartość i buduje fundament pod kolejny. Nie musisz mieć idealnego setupu od pierwszego dnia — ważne, żeby każdy krok eliminował konkretny rodzaj ręcznej pracy. Jeśli chcesz zacząć od audytu obecnej infrastruktury, sprawdź naszą stronę o [audycie infrastruktury i gotowości chmurowej](/services/audyt-infrastruktury/).
 
-Jeśli potrzebujesz wsparcia w budowaniu pipeline DevOps lub wdrażaniu automatyzacji, skorzystaj z [usług DevOps od Devopsity](https://devopsity.com) — zespół specjalistów pomoże zaprojektować i wdrożyć automatyzację dopasowaną do potrzeb Twojego startupu.
+Jeśli potrzebujesz wsparcia w budowaniu pipeline DevOps lub wdrażaniu automatyzacji, skorzystaj z [usług DevOps od Devopsity](https://devopsity.com/pl/uslugi/ci-cd/) — zespół specjalistów pomoże zaprojektować i wdrożyć automatyzację dopasowaną do potrzeb Twojego startupu.

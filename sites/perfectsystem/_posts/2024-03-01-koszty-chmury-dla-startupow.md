@@ -2,7 +2,7 @@
 layout: post
 title: "Koszty chmury dla startupów — jak nie przepłacić w AWS, Azure i GCP"
 description: "Praktyczny przewodnik po kosztach chmury dla startupów. Porównanie cenników AWS, Azure i GCP, strategie optymalizacji i najczęstsze pułapki kosztowe."
-author: sal
+author: george
 date: 2024-03-01
 lang: pl
 content_type: post
@@ -17,7 +17,7 @@ tags:
   - koszty
   - aws
   - optymalizacja
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/uslugi/finops/"
 backlink_anchor: "optymalizacja kosztów chmury z Devopsity"
 summary: "Koszty chmury to jeden z najczęstszych powodów wahania startupów przed migracją. W rzeczywistości chmura jest tańsza niż infrastruktura on-premise, ale wymaga aktywnego zarządzania kosztami. Ten artykuł porównuje cenniki AWS, Azure i GCP, omawia strategie optymalizacji i wskazuje najczęstsze pułapki kosztowe."
 faq:
@@ -127,7 +127,7 @@ Ręczne zarządzanie zasobami prowadzi do zapominania o wyłączaniu, nieprawid�
 
 Dla startupu wydającego poniżej 1000 PLN miesięcznie na chmurę, zaawansowana optymalizacja nie ma sensu — czas inżynierów jest droższy niż potencjalne oszczędności. Skup się na podstawach: right-sizing, wyłączanie dev/staging, programy kredytowe.
 
-Gdy rachunki przekraczają 5000 PLN miesięcznie, warto zainwestować w systematyczne podejście do FinOps. [Devopsity pomaga startupom w optymalizacji kosztów chmurowych](https://devopsity.com/pl/services/) — od audytu obecnych wydatków po wdrożenie automatyzacji i procesów FinOps.
+Gdy rachunki przekraczają 5000 PLN miesięcznie, warto zainwestować w systematyczne podejście do FinOps. [Devopsity pomaga startupom w optymalizacji kosztów chmury](https://devopsity.com/pl/uslugi/finops/) — od audytu obecnych wydatków po wdrożenie automatyzacji i procesów FinOps.
 
 Przy rachunkach powyżej 20 000 PLN miesięcznie Reserved Instances i Savings Plans stają się opłacalne. Zobowiązanie na 1 rok daje 30-40% oszczędności, a na 3 lata — do 72%.
 

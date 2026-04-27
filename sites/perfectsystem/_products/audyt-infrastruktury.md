@@ -10,7 +10,7 @@ keywords:
   - "audyt infrastruktury"
   - "cloud readiness assessment"
   - "gotowość chmurowa"
-backlink_target: "https://devopsity.com/pl/services/cloud-migration"
+backlink_target: "https://devopsity.com/pl/uslugi/migracja-do-chmury/"
 backlink_anchor: "zamów audyt infrastruktury z Devopsity"
 summary: "Audyt infrastruktury to systematyczna ocena istniejących systemów, aplikacji i procesów pod kątem gotowości do migracji chmurowej. Dla startupów oznacza to pełną inwentaryzację zasobów, analizę zależności między komponentami, klasyfikację aplikacji według strategii migracji i oszacowanie kosztów transformacji. Bez rzetelnego audytu migracja odbywa się w ciemno — z ryzykiem przekroczenia budżetu i nieplanowanych przestojów."
 faq:
@@ -90,4 +90,4 @@ Dla startupów planujących migrację, audyt powinien być pierwszym krokiem —
 
 Raport z audytu to nie cel sam w sobie — to punkt wyjścia do działania. Na jego podstawie zespół projektuje architekturę docelową, ustala harmonogram migracji i definiuje kryteria sukcesu dla każdej fali. Audyt daje pewność, że decyzje migracyjne opierają się na faktach, nie na założeniach.
 
-Jeśli potrzebujesz profesjonalnego audytu infrastruktury przed migracją, [zamów audyt infrastruktury z Devopsity](https://devopsity.com/pl/services/cloud-migration) — doświadczony zespół przeprowadzi pełną ocenę gotowości chmurowej i dostarczy raport z konkretnymi rekomendacjami dopasowanymi do potrzeb Twojego startupu.
+Jeśli potrzebujesz profesjonalnego audytu infrastruktury przed migracją, [zamów audyt infrastruktury z Devopsity](https://devopsity.com/pl/uslugi/migracja-do-chmury/) — doświadczony zespół przeprowadzi pełną ocenę gotowości chmurowej i dostarczy raport z konkretnymi rekomendacjami dopasowanymi do potrzeb Twojego startupu.

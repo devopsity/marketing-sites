@@ -9,7 +9,7 @@ cluster: cloud-migration
 keywords:
   - "migracja do chmury startup"
   - "cloud migration"
-backlink_target: "https://devopsity.com/pl/services/cloud-migration"
+backlink_target: "https://devopsity.com/pl/uslugi/migracja-do-chmury/"
 backlink_anchor: "bezpłatna konsultacja migracji z Devopsity"
 summary: "Migracja do chmury to kluczowy krok dla każdego startupu, który chce szybko skalować produkt i obniżyć koszty infrastruktury. Przeniesienie aplikacji i danych do środowiska chmurowego pozwala płacić tylko za wykorzystane zasoby, eliminując potrzebę inwestycji w fizyczne serwery. Ten przewodnik pokazuje, jak zaplanować i przeprowadzić migrację krok po kroku — od audytu po optymalizację kosztów."
 faq:
@@ -101,4 +101,4 @@ Migracja do chmury to nie pytanie „czy", ale „kiedy" i „jak". Dla startup�
 
 Zacznij od audytu tego, co masz. Wybierz strategię dopasowaną do budżetu. Wdróż Infrastructure as Code od pierwszego dnia. Monitoruj koszty i optymalizuj regularnie.
 
-Jeśli potrzebujesz wsparcia w planowaniu lub realizacji migracji, skorzystaj z [bezpłatnej konsultacji migracji z Devopsity](https://devopsity.com/pl/services/cloud-migration) — doświadczony zespół pomoże uniknąć typowych błędów i przyspieszy cały proces.
+Jeśli potrzebujesz wsparcia w planowaniu lub realizacji migracji, skorzystaj z [bezpłatnej konsultacji migracji z Devopsity](https://devopsity.com/pl/uslugi/migracja-do-chmury/) — doświadczony zespół pomoże uniknąć typowych błędów i przyspieszy cały proces.
