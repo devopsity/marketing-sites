@@ -64,7 +64,7 @@ Terraform rozwiązuje to, definiując całą infrastrukturę w plikach konfigura
 
 Powtarzalność to pierwsza korzyść — środowisko staging jest identyczne z produkcją, bo powstaje z tego samego kodu. Audytowalność to druga — każda zmiana w infrastrukturze jest widoczna w historii Git i przechodzi przez code review. Szybkość to trzecia — nowy region, nowe środowisko testowe czy disaster recovery to kwestia uruchomienia jednego polecenia.
 
-Dla startupów planujących migrację do chmury, IaC jest szczególnie istotne. Zamiast ręcznie konfigurować zasoby w konsoli AWS, definiujesz je raz w Terraform i wdrażasz automatycznie. Więcej o tym podejściu w kontekście migracji znajdziesz na naszej stronie o [migracji do chmury dla startupów](/migracja-do-chmury-startupy/).
+Dla startupów planujących migrację do chmury, IaC jest szczególnie istotne. Zamiast ręcznie konfigurować zasoby w konsoli AWS, definiujesz je raz w Terraform i wdrażasz automatycznie. Więcej o tym podejściu w kontekście migracji znajdziesz na naszej stronie o [migracji do chmury dla startupów](/migracja-chmura-startupy/).
 
 ## Konteneryzacja — spójność środowisk
 

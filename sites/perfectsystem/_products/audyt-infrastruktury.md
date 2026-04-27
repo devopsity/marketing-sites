@@ -84,7 +84,7 @@ Dla startupów korzystających z kontenerów, audyt obejmuje też przegląd obra
 
 Audyt warto przeprowadzić w trzech sytuacjach: przed planowaną migracją do chmury, po szybkiej fazie wzrostu (gdy infrastruktura rozrosła się organicznie i nikt nie ma pełnego obrazu) oraz regularnie co 6-12 miesięcy jako element higieny technicznej.
 
-Dla startupów planujących migrację, audyt powinien być pierwszym krokiem — przed jakimikolwiek decyzjami technicznymi czy zakupowymi. Inwestycja w audyt zwraca się wielokrotnie, eliminując kosztowne niespodzianki w trakcie migracji. Więcej o planowaniu migracji przeczytasz na naszej stronie o [migracji do chmury dla startupów](/migracja-do-chmury-startupy/).
+Dla startupów planujących migrację, audyt powinien być pierwszym krokiem — przed jakimikolwiek decyzjami technicznymi czy zakupowymi. Inwestycja w audyt zwraca się wielokrotnie, eliminując kosztowne niespodzianki w trakcie migracji. Więcej o planowaniu migracji przeczytasz na naszej stronie o [migracji do chmury dla startupów](/migracja-chmura-startupy/).
 
 ## Następne kroki po audycie
 

@@ -94,7 +94,7 @@ Wdrożenie CI/CD przynosi mierzalne korzyści od pierwszego dnia. Czas wdrożeni
 
 Długoterminowo automatyzacja pozwala skalować zespół bez proporcjonalnego wzrostu kosztów operacyjnych. Dziesięcioosobowy zespół z dobrym pipeline wdraża szybciej niż dwudziestoosobowy bez niego. To przewaga, która rośnie z czasem.
 
-Dla startupów planujących migrację do chmury, CI/CD jest naturalnym uzupełnieniem procesu. Pipeline automatyzuje nie tylko wdrażanie aplikacji, ale też zmiany w infrastrukturze — każda modyfikacja Terraform przechodzi przez review i testy przed wdrożeniem. Więcej o migracji w naszym [przewodniku po migracji do chmury dla startupów](/migracja-do-chmury-startupy/).
+Dla startupów planujących migrację do chmury, CI/CD jest naturalnym uzupełnieniem procesu. Pipeline automatyzuje nie tylko wdrażanie aplikacji, ale też zmiany w infrastrukturze — każda modyfikacja Terraform przechodzi przez review i testy przed wdrożeniem. Więcej o migracji w naszym [przewodniku po migracji do chmury dla startupów](/migracja-chmura-startupy/).
 
 ## Następne kroki
 
