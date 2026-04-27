@@ -35,7 +35,7 @@ Strategie migracji, wybór dostawcy, optymalizacja kosztów i bezpieczeństwo. O
 
 Wybrane artykuły z tego obszaru:
 - [Migracja do AWS — przewodnik dla startupów](/chmura/migracja-do-aws/)
-- [Migracja do chmury dla startupów](/migracja-do-chmury-startupy/) — strona docelowa z przeglądem strategii
+- [Migracja do chmury dla startupów](/migracja-chmura-startupy/) — strona docelowa z przeglądem strategii
 - [Audyt infrastruktury i gotowości chmurowej](/services/audyt-infrastruktury/) — jak przygotować się do migracji
 
 ### Automatyzacja DevOps
