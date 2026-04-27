@@ -203,7 +203,7 @@ jobs:
             body += '|------|-------------|\n';
 
             for (const site of sites) {
-              const url = `http://${site.preview_bucket}.s3-website-${region}.amazonaws.com/pr-${prNumber}/`;
+              const url = `http://${site.preview_bucket}.s3-website.${region}.amazonaws.com/pr-${prNumber}/`;
               body += `| ${site.id} | [${url}](${url}) |\n`;
             }
 

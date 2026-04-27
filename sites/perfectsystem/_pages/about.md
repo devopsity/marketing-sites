@@ -1,47 +1,34 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: "O PerfectSystem.pl"
 permalink: /about
-comments: true
-summary: "Mediumish is a Jekyll template designed for blogging, compatible with GitHub Pages. This about page provides documentation links, information about the template, and ways to support the project."
+summary: "PerfectSystem.pl to polski portal wiedzy pomagający startupom w migracji do chmury i wdrażaniu praktyk DevOps. Publikujemy praktyczne przewodniki oparte na doświadczeniu z rzeczywistych projektów."
 faq:
-  - q: "Is Mediumish compatible with GitHub Pages?"
-    a: "Yes, Mediumish is fully compatible with GitHub Pages. You can host your Jekyll site for free using GitHub's built-in static site hosting."
+  - q: "Dla kogo jest PerfectSystem.pl?"
+    a: "Portal jest skierowany do założycieli startupów, CTO i inżynierów, którzy chcą podejmować świadome decyzje technologiczne dotyczące chmury i DevOps."
 definitions:
-  - term: "Jekyll"
-    definition: "A static site generator written in Ruby that transforms plain text files into websites. It is natively supported by GitHub Pages and widely used for blogs and documentation sites."
-sources:
-  - url: "https://jekyllrb.com/"
-    title: "Jekyll Official Website"
-  - url: "https://pages.github.com/"
-    title: "GitHub Pages"
+  - term: "DevOps"
+    definition: "Zestaw praktyk łączących rozwój oprogramowania (Dev) i operacje IT (Ops), mających na celu skrócenie cyklu rozwoju i dostarczanie oprogramowania w sposób ciągły i niezawodny."
 ---
 
-<div class="row justify-content-between">
-<div class="col-md-8 pr-5">
+## Nasza misja
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+PerfectSystem.pl powstał z jednego celu — pomóc polskim startupom podejmować lepsze decyzje technologiczne dotyczące chmury i DevOps. Wiemy, że na wczesnym etapie rozwoju każdy błąd infrastrukturalny kosztuje podwójnie: czas i pieniądze. Dlatego publikujemy praktyczne przewodniki oparte na doświadczeniu z rzeczywistych projektów, nie na teorii.
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+## Co znajdziesz na portalu
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+Nasze treści koncentrują się na dwóch kluczowych obszarach:
 
-<h4>Questions or bug reports?</h4>
+### Migracja do chmury
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+Strategie migracji, wybór dostawcy, optymalizacja kosztów i bezpieczeństwo — od pierwszych kroków po zaawansowane architektury cloud-native. Punkt wyjścia to nasz [kompletny przewodnik po migracji do chmury](/pillars/migracja-do-chmury/), który omawia wszystkie aspekty procesu.
 
-</div>
+Jeśli planujesz migrację, zacznij od [przewodnika po migracji do AWS](/chmura/migracja-do-aws/) lub sprawdź naszą stronę o [migracji do chmury dla startupów](/migracja-do-chmury-startupy/).
 
-<div class="col-md-4">
+### Automatyzacja DevOps
 
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+CI/CD, Infrastructure as Code, konteneryzacja i monitoring — narzędzia i praktyki, które pozwalają małemu zespołowi działać jak duża organizacja. Sprawdź nasz [przewodnik po automatyzacji DevOps](/automatyzacja-devops-startupy/).
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+## Kontakt
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
-</div>
-</div>
-</div>
+Masz pytania lub propozycje tematów? Odwiedź naszą [stronę kontaktową](/info/kontakt/) lub napisz do nas przez media społecznościowe.
