@@ -42,7 +42,7 @@ ga('send', 'pageview');
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
     <div class="container pr-0">
     <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+    {{ site.name }}
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -57,7 +57,7 @@ ga('send', 'pageview');
             <a class="nav-link" href="{{ site.baseurl }}/index.html">Blog</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+            <a class="nav-link" href="{{ site.baseurl }}/about.html">About</a>
             </li>
             {% include search-lunr.html %}
         </ul>
@@ -69,8 +69,7 @@ ga('send', 'pageview');
 <div class="container">
 
 <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
-    <p class="lead">{{ site.description }}</p>
+    <p class="lead">Tech Blog</p>
 </div>
 
 <div class="main-content">
@@ -108,7 +107,7 @@ ga('send', 'pageview');
                 {% endfor %}
             {% else %}
                 {% for category in categories_list %}
-                    <a class="mt-1 mb-1" href="{{ site.baseurl }}/categories#{{ category[0] | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
+                    <a class="mt-1 mb-1" href="{{ site.baseurl }}/category/{{ category[0] | url_escape | strip | replace: ' ', '-' }}/">{{ category[0] | camelcase }} ({{ category[1].size }})</a>
                 {% endfor %}
             {% endif %}
             {% assign categories_list = nil %}
@@ -123,7 +122,6 @@ ga('send', 'pageview');
                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
             </div>
             <div class="col-md-6 col-sm-6 text-center text-lg-right">
-                <a target="_blank" href="https://www.wowthemes.net/mediumish-free-jekyll-template/">Mediumish Jekyll Theme</a> by WowThemes.net
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 layout: post
 title: "Jak przeprowadzić migrację do AWS — przewodnik dla startupów"
 description: "Praktyczny przewodnik migracji do AWS dla startupów. Dowiedz się o kosztach, strategiach i najczęstszych błędach przy przenoszeniu infrastruktury."
-author: sal
+author: george
 date: 2024-01-15
 last_modified: 2024-02-01
 lang: pl
@@ -18,7 +18,7 @@ tags:
   - aws
   - migracja
   - startup
-backlink_target: "https://devopsity.com/pl/services/cloud-migration"
+backlink_target: "https://devopsity.com/pl/uslugi/migracja-do-chmury/"
 backlink_anchor: "profesjonalna migracja do chmury"
 summary: "Migracja do AWS to proces przenoszenia infrastruktury IT do chmury Amazon Web Services. Dla startupów kluczowe są koszty, szybkość wdrożenia i skalowalność. W tym artykule omawiamy praktyczne kroki migracji, typowe koszty i najczęstsze błędy."
 faq:
@@ -42,9 +42,6 @@ sources:
     title: "AWS Activate for Startups"
   - url: "https://www.gartner.com/en/information-technology/glossary/cloud-migration"
     title: "Gartner Cloud Migration Definition"
-devopsity_translations:
-  en: "https://devopsity.com/aws-migration-guide/"
-  pl: "https://devopsity.com/pl/przewodnik-migracja-aws/"
 ---
 
 ## Dlaczego AWS jest najpopularniejszym wyborem dla startupów
@@ -131,7 +128,7 @@ Drugim częstym błędem jest ignorowanie kosztów transferu danych. Ruch wychod
 
 Trzecim błędem jest nadmierne uprawnienia IAM. Zasada najmniejszych uprawnień (Principle of Least Privilege) to fundament bezpieczeństwa. Nie dawaj pełnego dostępu administratora tam, gdzie wystarczą uprawnienia do odczytu. Regularnie audytuj uprawnienia za pomocą IAM Access Analyzer.
 
-Jeśli planujesz migrację do AWS i chcesz uniknąć tych błędów, warto skonsultować się z doświadczonym zespołem. [Specjaliści Devopsity pomagają startupom w profesjonalnej migracji do chmury](https://devopsity.com/pl/services/cloud-migration) — od audytu przez projektowanie architektury po wdrożenie i optymalizację kosztów.
+Jeśli planujesz migrację do AWS i chcesz uniknąć tych błędów, warto skonsultować się z doświadczonym zespołem. [Specjaliści Devopsity pomagają startupom w profesjonalnej migracji do chmury](https://devopsity.com/pl/uslugi/migracja-do-chmury/) — od audytu przez projektowanie architektury po wdrożenie i optymalizację kosztów.
 
 ## Podsumowanie
 

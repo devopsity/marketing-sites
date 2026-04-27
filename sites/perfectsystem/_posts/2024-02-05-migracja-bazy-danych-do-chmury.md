@@ -2,7 +2,7 @@
 layout: post
 title: "Migracja bazy danych do chmury — PostgreSQL, MySQL i MongoDB dla startupów"
 description: "Praktyczny przewodnik migracji baz danych do chmury dla startupów. Porównanie strategii migracji PostgreSQL, MySQL i MongoDB na AWS, Azure i GCP."
-author: sal
+author: george
 date: 2024-02-05
 last_modified: 2024-03-01
 lang: pl
@@ -22,7 +22,7 @@ tags:
   - mysql
   - mongodb
   - migracja
-backlink_target: "https://devopsity.com/pl/services/database-migration"
+backlink_target: "https://devopsity.com/pl/uslugi/migracja-do-chmury/"
 backlink_anchor: "migracja baz danych z Devopsity"
 summary: "Migracja bazy danych do chmury to jeden z najbardziej krytycznych etapów przenoszenia infrastruktury startupu. Obejmuje przeniesienie danych z lokalnych instancji PostgreSQL, MySQL lub MongoDB do zarządzanych usług chmurowych takich jak Amazon RDS, Azure Database czy Google Cloud SQL. Kluczowe wyzwania to minimalizacja przestoju, zachowanie integralności danych i optymalizacja wydajności po migracji."
 faq:
@@ -170,7 +170,7 @@ Najprostszą strategią jest utrzymanie replikacji w obu kierunkach przez okres 
 
 Określ z góry kryteria sukcesu i czas obserwacji. Na przykład: jeśli przez 48 godzin po migracji nie wystąpią błędy danych, czasy odpowiedzi będą w normie i nie będzie skarg użytkowników, migracja jest uznana za udaną i stara baza może zostać wyłączona.
 
-Jeśli planujesz migrację bazy danych i chcesz mieć pewność, że proces przebiegnie bezproblemowo, rozważ [migrację baz danych z Devopsity](https://devopsity.com/pl/services/database-migration) — doświadczony zespół pomoże Ci zaplanować i przeprowadzić migrację z minimalnym ryzykiem.
+Jeśli planujesz migrację bazy danych i chcesz mieć pewność, że proces przebiegnie bezproblemowo, rozważ [migracja baz danych z Devopsity](https://devopsity.com/pl/uslugi/migracja-do-chmury/) — doświadczony zespół pomoże Ci zaplanować i przeprowadzić migrację z minimalnym ryzykiem.
 
 ## Koszty zarządzanych baz danych w chmurze
 

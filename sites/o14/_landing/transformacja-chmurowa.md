@@ -9,7 +9,7 @@ keywords:
   - "transformacja chmurowa enterprise"
   - "migracja do chmury dla firm"
   - "cloud transformation"
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/uslugi/migracja-do-chmury/"
 backlink_anchor: "oferta transformacji chmurowej Devopsity"
 summary: "Transformacja chmurowa to strategiczny proces przenoszenia infrastruktury IT, aplikacji i danych do chmury publicznej, prywatnej lub hybrydowej. Dla przedsiębiorstw oznacza to nie tylko zmianę technologii, ale fundamentalną reorganizację procesów IT, modelu operacyjnego i kompetencji zespołów."
 faq:
@@ -45,4 +45,4 @@ Automatyzacja jest kluczem do skalowalnej transformacji. [Infrastructure as Code
 
 Transformacja chmurowa w dużej organizacji to projekt trwający miesiące, angażujący wiele zespołów i wymagający specjalistycznych kompetencji. Doświadczony partner technologiczny przyspiesza proces, pomaga uniknąć typowych błędów i transferuje wiedzę do zespołów wewnętrznych.
 
-[Devopsity specjalizuje się w transformacji chmurowej dla przedsiębiorstw](https://devopsity.com/pl/services/) — od audytu i strategii przez migrację po optymalizację i wsparcie operacyjne.
+[Devopsity specjalizuje się w transformacji chmurowej dla przedsiębiorstw](https://devopsity.com/pl/uslugi/migracja-do-chmury/) — od audytu i strategii przez migrację po optymalizację i wsparcie operacyjne.

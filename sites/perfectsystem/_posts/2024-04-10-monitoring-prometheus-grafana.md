@@ -2,7 +2,7 @@
 layout: post
 title: "Monitoring z Prometheus i Grafana — przewodnik dla startupów"
 description: "Jak wdrożyć monitoring z Prometheus i Grafana w startupie. Metryki, alerty, dashboardy i observability — praktyczny przewodnik od zera do produkcji."
-author: sal
+author: george
 date: 2024-04-10
 last_modified: 2024-05-01
 lang: pl
@@ -32,6 +32,8 @@ definitions:
     definition: "Numeryczna wartość mierzona w czasie, opisująca stan systemu — na przykład zużycie CPU, czas odpowiedzi HTTP, liczba aktywnych połączeń do bazy danych. Metryki są podstawą monitoringu i alertingu."
   - term: "PromQL"
     definition: "Prometheus Query Language — język zapytań do przeszukiwania i agregowania metryk w Prometheus. PromQL pozwala obliczać średnie, percentyle, rate i inne statystyki na danych czasowych."
+backlink_target: "https://devopsity.com/pl/uslugi/observability/"
+backlink_anchor: "usługi observability od Devopsity"
 sources:
   - url: "https://prometheus.io/docs/"
     title: "Prometheus Documentation"
@@ -199,7 +201,7 @@ Importuj gotowe dashboardy z Grafana.com zamiast budować od zera. Dostosuj je d
 
 Skonfiguruj alerty od pierwszego dnia — nawet proste alerty na dostępność serwisów i error rate są lepsze niż brak alertów. Iteruj na podstawie doświadczenia — dodawaj alerty po każdym incydencie, usuwaj te, które generują szum.
 
-Warto też zapoznać się z naszą ofertą [wdrożenia CI/CD i automatyzacji DevOps](/services/wdrozenie-ci-cd/), która obejmuje konfigurację monitoringu jako część kompleksowej automatyzacji. Jeśli planujesz migrację do chmury, monitoring jest kluczowym elementem procesu — więcej w naszym [przewodniku po migracji do chmury](/pillars/migracja-do-chmury/).
+Warto też zapoznać się z naszą ofertą [wdrożenia CI/CD i automatyzacji DevOps](/services/wdrozenie-ci-cd/), która obejmuje konfigurację monitoringu jako część kompleksowej automatyzacji. Jeśli szukasz wsparcia w budowie platformy observability, sprawdź [usługi observability od Devopsity](https://devopsity.com/pl/uslugi/observability/) — zespół pomoże dobrać narzędzia i skonfigurować monitoring dopasowany do Twojego systemu. Jeśli planujesz migrację do chmury, monitoring jest kluczowym elementem procesu — więcej w naszym [przewodniku po migracji do chmury](/pillars/migracja-do-chmury/).
 
 ## Podsumowanie
 

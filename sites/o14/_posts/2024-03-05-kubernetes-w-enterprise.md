@@ -11,7 +11,7 @@ keywords:
   - "Kubernetes enterprise"
   - "zarządzanie Kubernetes"
   - "konteneryzacja enterprise"
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/produkty/kubernetes/"
 backlink_anchor: "wsparcie Devopsity w zakresie Kubernetes"
 summary: "Kubernetes stał się standardem orkiestracji kontenerów w dużych organizacjach, ale jego wdrożenie w środowisku enterprise wymaga przemyślanej architektury, polityk bezpieczeństwa i modelu operacyjnego. Skuteczne zarządzanie Kubernetes na dużą skalę to wyzwanie wykraczające daleko poza instalację klastra."
 faq:
@@ -81,6 +81,6 @@ Dla enterprise GitOps daje pełną audytowalność zmian (każda zmiana to commi
 
 ## Wsparcie przy wdrożeniu
 
-Wdrożenie Kubernetes w dużej organizacji to projekt, który wymaga kompetencji z zakresu infrastruktury, bezpieczeństwa i procesów DevOps. [Devopsity wspiera organizacje enterprise w projektowaniu i wdrażaniu platform Kubernetes](https://devopsity.com/pl/services/), od architektury klastrów po szkolenia zespołów.
+Wdrożenie Kubernetes w dużej organizacji to projekt, który wymaga kompetencji z zakresu infrastruktury, bezpieczeństwa i procesów DevOps. [Devopsity wspiera organizacje enterprise w projektowaniu i wdrażaniu platform Kubernetes](https://devopsity.com/pl/produkty/kubernetes/), od architektury klastrów po szkolenia zespołów.
 
 Kluczowe jest, aby nie traktować Kubernetes jako celu samego w sobie, ale jako narzędzie służące realizacji celów biznesowych — szybszemu dostarczaniu oprogramowania, lepszej skalowalności i niższym kosztom operacyjnym.

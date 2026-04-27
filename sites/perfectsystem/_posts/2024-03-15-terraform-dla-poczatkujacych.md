@@ -2,7 +2,7 @@
 layout: post
 title: "Terraform dla początkujących — Infrastructure as Code w praktyce"
 description: "Praktyczny przewodnik po Terraform dla startupów. Podstawy Infrastructure as Code, konfiguracja AWS, moduły i najlepsze praktyki zarządzania infrastrukturą jako kodem."
-author: sal
+author: george
 date: 2024-03-15
 last_modified: 2024-04-01
 lang: pl
@@ -19,8 +19,8 @@ tags:
   - terraform
   - iac
   - aws
-backlink_target: "https://devopsity.com/pl/services/"
-backlink_anchor: "konsultacje Terraform od Devopsity"
+backlink_target: "https://devopsity.com/pl/uslugi/konsulting/"
+backlink_anchor: "konsulting DevOps od Devopsity"
 summary: "Terraform to narzędzie Infrastructure as Code od HashiCorp, które pozwala definiować infrastrukturę chmurową w plikach konfiguracyjnych zamiast klikać w konsoli. Dla startupów oznacza to powtarzalną, audytowalną i wersjonowaną infrastrukturę — nowe środowisko powstaje w minuty, a każda zmiana przechodzi przez code review."
 faq:
   - q: "Czy Terraform jest darmowy?"
@@ -179,7 +179,7 @@ Terratest (Go) i Kitchen-Terraform (Ruby) pozwalają pisać testy automatyczne d
 
 Jeśli masz zasoby utworzone ręcznie przez konsolę, `terraform import` pozwala je „zaimportować" do state i zarządzać nimi kodem. To przydatne przy stopniowym przechodzeniu z ręcznej konfiguracji na IaC — nie musisz odtwarzać infrastruktury od zera.
 
-Jeśli potrzebujesz wsparcia w wdrożeniu Terraform lub migracji istniejącej infrastruktury do IaC, skorzystaj z [konsultacji Terraform od Devopsity](https://devopsity.com/pl/services/) — zespół specjalistów pomoże zaprojektować strukturę modułów, skonfigurować remote state i zintegrować Terraform z pipeline CI/CD.
+Jeśli potrzebujesz wsparcia w wdrożeniu Terraform lub migracji istniejącej infrastruktury do IaC, skorzystaj z [konsulting DevOps od Devopsity](https://devopsity.com/pl/uslugi/konsulting/) — zespół specjalistów pomoże zaprojektować strukturę modułów, skonfigurować remote state i zintegrować Terraform z pipeline CI/CD.
 
 ## Podsumowanie
 

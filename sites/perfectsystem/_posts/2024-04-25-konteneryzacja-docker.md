@@ -2,7 +2,7 @@
 layout: post
 title: "Konteneryzacja z Docker — pierwszy krok do chmury dla startupów"
 description: "Praktyczny przewodnik po konteneryzacji aplikacji z Docker dla startupów. Dockerfile, docker-compose, rejestry obrazów i wdrażanie w chmurze."
-author: sal
+author: george
 date: 2024-04-25
 lang: pl
 content_type: post
@@ -17,7 +17,7 @@ tags:
   - docker
   - kontenery
   - devops
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/produkty/kubernetes/"
 backlink_anchor: "konteneryzacja aplikacji z Devopsity"
 summary: "Konteneryzacja z Docker to proces pakowania aplikacji wraz z jej zależnościami w przenośny obraz, który działa identycznie na każdym środowisku. Dla startupów Docker eliminuje problem 'u mnie działa', upraszcza wdrażanie w chmurze i stanowi fundament nowoczesnej architektury mikroserwisowej."
 faq:
@@ -111,4 +111,4 @@ Logi z kontenerów powinny trafiać do centralnego systemu logowania. Docker dom
 
 Konteneryzacja to fundament, ale nie cel sam w sobie. Pełna ścieżka od kodu do produkcji obejmuje: konteneryzację aplikacji (Docker), automatyzację budowania i testowania ([CI/CD z GitHub Actions](/devops/github-actions-dla-startupow/)), infrastrukturę jako kod ([Terraform](/devops/terraform-dla-poczatkujacych/)) i monitoring ([Prometheus + Grafana](/devops/monitoring-prometheus-grafana/)).
 
-[Devopsity pomaga startupom w konteneryzacji aplikacji](https://devopsity.com/pl/services/) i wdrażaniu w chmurze — od pierwszego Dockerfile po produkcyjny pipeline CI/CD. Więcej o kosztach poszczególnych rozwiązań znajdziesz w artykule o [kosztach chmury dla startupów](/chmura/koszty-chmury-dla-startupow/).
+[Devopsity pomaga startupom w konteneryzacji aplikacji](https://devopsity.com/pl/produkty/kubernetes/) i wdrażaniu w chmurze — od pierwszego Dockerfile po produkcyjny pipeline CI/CD. Więcej o kosztach poszczególnych rozwiązań znajdziesz w artykule o [kosztach chmury dla startupów](/chmura/koszty-chmury-dla-startupow/).

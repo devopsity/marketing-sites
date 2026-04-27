@@ -2,7 +2,7 @@
 layout: pillar
 title: "Kompletny przewodnik po migracji do chmury dla startupów"
 description: "Wszystko o migracji do chmury dla startupów — strategie, koszty, narzędzia i najlepsze praktyki. Przewodnik krok po kroku."
-author: sal
+author: george
 date: 2024-01-01
 last_modified: 2024-03-01
 lang: pl
@@ -25,9 +25,6 @@ faq:
     a: "Wybór zależy od potrzeb. AWS oferuje najszerszy ekosystem usług, Azure dobrze integruje się z narzędziami Microsoft, a GCP wyróżnia się w obszarze danych i machine learning. Dla większości startupów AWS jest bezpiecznym wyborem ze względu na dojrzałość platformy."
   - q: "Czy migracja do chmury jest bezpieczna?"
     a: "Tak, pod warunkiem prawidłowego wdrożenia. Dostawcy chmurowi oferują zaawansowane mechanizmy bezpieczeństwa — szyfrowanie, IAM, monitoring. Kluczowe jest poprawne skonfigurowanie uprawnień i regularne audyty bezpieczeństwa."
-devopsity_translations:
-  en: "https://devopsity.com/cloud-migration-guide/"
-  pl: "https://devopsity.com/pl/przewodnik-migracja-chmura/"
 definitions:
   - term: "Lift and Shift"
     definition: "Strategia migracji polegająca na przeniesieniu aplikacji do chmury bez zmian w architekturze. Najszybsza metoda, ale nie wykorzystuje w pełni możliwości chmury."
@@ -196,7 +193,7 @@ AWS Database Migration Service (DMS), Azure Database Migration Service i Google 
 
 Terraform, AWS CloudFormation, Azure Bicep i Google Cloud Deployment Manager pozwalają definiować infrastrukturę jako kod. Dla startupów Terraform jest najczęstszym wyborem ze względu na wsparcie wielu dostawców i dużą społeczność.
 
-Przy planowaniu migracji warto rozważyć współpracę z doświadczonym partnerem. [Zespół Devopsity specjalizuje się w migracjach do chmury](https://devopsity.com/pl/services/cloud-migration) i może pomóc w uniknięciu typowych błędów, przyspieszeniu procesu i optymalizacji kosztów od samego początku.
+Przy planowaniu migracji warto rozważyć współpracę z doświadczonym partnerem. [Zespół Devopsity specjalizuje się w migracjach do chmury](https://devopsity.com/pl/uslugi/migracja-do-chmury/) i może pomóc w uniknięciu typowych błędów, przyspieszeniu procesu i optymalizacji kosztów od samego początku.
 
 ### Monitoring i observability
 

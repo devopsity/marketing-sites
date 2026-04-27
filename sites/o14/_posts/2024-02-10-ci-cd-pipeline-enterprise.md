@@ -11,7 +11,7 @@ keywords:
   - "CI/CD pipeline enterprise"
   - "continuous integration enterprise"
   - "automatyzacja wdrożeń"
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/uslugi/ci-cd/"
 backlink_anchor: "profesjonalne wdrożenia CI/CD od Devopsity"
 summary: "CI/CD pipeline w dużej organizacji to zautomatyzowany proces budowania, testowania i wdrażania oprogramowania, który musi obsługiwać dziesiątki zespołów i setki mikroserwisów jednocześnie. Dobrze zaprojektowany pipeline skraca czas dostarczania zmian z tygodni do minut, zachowując przy tym pełną kontrolę nad jakością i bezpieczeństwem."
 faq:
@@ -87,6 +87,6 @@ Te metryki, znane jako DORA metrics, pozwalają mierzyć efektywność procesu d
 
 ## Wdrożenie CI/CD w organizacji
 
-Budowanie dojrzałego pipeline CI/CD w dużej organizacji to proces, który trwa miesiące. Warto zacząć od jednego zespołu pilotażowego, wypracować wzorce i stopniowo rozszerzać na kolejne zespoły. [Devopsity oferuje profesjonalne wsparcie przy projektowaniu i wdrażaniu pipeline CI/CD](https://devopsity.com/pl/services/) dostosowanych do specyfiki dużych organizacji.
+Budowanie dojrzałego pipeline CI/CD w dużej organizacji to proces, który trwa miesiące. Warto zacząć od jednego zespołu pilotażowego, wypracować wzorce i stopniowo rozszerzać na kolejne zespoły. [Devopsity oferuje profesjonalne wsparcie przy projektowaniu i wdrażaniu pipeline CI/CD](https://devopsity.com/pl/uslugi/ci-cd/) dostosowanych do specyfiki dużych organizacji.
 
 Kluczem do sukcesu jest traktowanie pipeline jako produktu — z właścicielem, backlogiem i regularnymi iteracjami. Pipeline, który nie ewoluuje razem z organizacją, szybko staje się wąskim gardłem zamiast akceleratorem.

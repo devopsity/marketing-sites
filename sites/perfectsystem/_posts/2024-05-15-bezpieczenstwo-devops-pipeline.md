@@ -2,7 +2,7 @@
 layout: post
 title: "Bezpieczeństwo pipeline DevOps — DevSecOps dla startupów"
 description: "Jak zabezpieczyć pipeline CI/CD i infrastrukturę chmurową. SAST, SCA, skanowanie kontenerów, zarządzanie sekretami i najlepsze praktyki DevSecOps."
-author: sal
+author: george
 date: 2024-05-15
 lang: pl
 content_type: post
@@ -17,7 +17,7 @@ tags:
   - bezpieczenstwo
   - devsecops
   - ci-cd
-backlink_target: "https://devopsity.com/pl/services/"
+backlink_target: "https://devopsity.com/pl/uslugi/security-compliance/"
 backlink_anchor: "audyt bezpieczeństwa DevOps od Devopsity"
 summary: "DevSecOps to praktyka integracji bezpieczeństwa z każdym etapem pipeline CI/CD zamiast traktowania go jako osobnego kroku na końcu procesu. Dla startupów oznacza to automatyczne skanowanie kodu, zależności i kontenerów, zarządzanie sekretami i wdrażanie polityk bezpieczeństwa jako kodu."
 faq:
@@ -131,4 +131,4 @@ Regularnie testuj plan — symuluj incydent raz na kwartał. Lepiej odkryć luki
 
 Nie próbuj wdrożyć wszystkiego naraz. Rekomendowana kolejność dla startupu: najpierw secret scanning (pre-commit hook z GitLeaks), potem Dependabot/Renovate dla automatycznych aktualizacji zależności, następnie SAST z Semgrep w pipeline CI/CD, dalej skanowanie kontenerów z Trivy i na końcu skanowanie IaC z Checkov.
 
-Każdy krok dodaje warstwę bezpieczeństwa bez znaczącego obciążenia zespołu. [Devopsity pomaga startupom w projektowaniu i wdrażaniu praktyk DevSecOps](https://devopsity.com/pl/services/) — od audytu obecnego stanu po pełną automatyzację bezpieczeństwa w pipeline. Więcej o automatyzacji DevOps znajdziesz w naszym [przewodniku po automatyzacji DevOps](/pillars/automatyzacja-devops-startupy/).
+Każdy krok dodaje warstwę bezpieczeństwa bez znaczącego obciążenia zespołu. [Devopsity pomaga startupom w projektowaniu i wdrażaniu praktyk DevSecOps](https://devopsity.com/pl/uslugi/security-compliance/) — od audytu obecnego stanu po pełną automatyzację bezpieczeństwa w pipeline. Więcej o automatyzacji DevOps znajdziesz w naszym [przewodniku po automatyzacji DevOps](/pillars/automatyzacja-devops-startupy/).

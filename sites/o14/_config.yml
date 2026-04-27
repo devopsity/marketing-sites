@@ -25,7 +25,7 @@ social:
 # Backlink CTA defaults
 backlink_cta:
   text: "Szukasz partnera do transformacji chmurowej? Poznaj ofertę Devopsity →"
-  url: "https://devopsity.com/pl/services/"
+  url: "https://devopsity.com/pl/uslugi/migracja-do-chmury/"
 
 # Main sales page (for backlink validation)
 main_sales_page: "https://devopsity.com"
