@@ -48,7 +48,7 @@ layout: default
                 <div class="row post-top-meta">
                     <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
                         {% if author.avatar %}
-                        <img class="author-thumb" src="{{ site.baseurl }}/{{ author.avatar }}" alt="{{ author.display_name }}">
+                        <img class="author-thumb" src="{{ author.avatar | relative_url }}" alt="{{ author.display_name }}">
                         {% else %}
                         <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
                         {% endif %}
@@ -71,9 +71,9 @@ layout: default
 
             {% if page.image %}
             {% if site.lazyimages == "enabled" %}
-            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | relative_url }}{% endif %}" alt="{{ page.title }}">
             {% else %}
-            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+            <img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | relative_url }}{% endif %}" alt="{{ page.title }}">
             {% endif %}
             {% endif %}
 
@@ -83,7 +83,7 @@ layout: default
                         <p><em>{{ page.beforetoc }}</em></p>
                     {% endif %}
                     <div class="toc mt-4 mb-4 lead">
-                        <h3 class="font-weight-bold">Summary</h3>
+                        <h2 class="font-weight-bold">Summary</h2>
                         {% include toc.html html=content %}
                     </div>
                 {% endif %}
@@ -91,6 +91,9 @@ layout: default
             </div>
 
             {% include backlink-cta.html %}
+
+            {% include definitions.html %}
+            {% include sources.html %}
 
             {% if page.faq %}
                 {% include faq.html %}
@@ -135,10 +138,10 @@ layout: default
 
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{ page.previous.url }}"> &laquo; {{ page.previous.title }}</a>
+            <a class="prev d-block col-md-6" href="{{ page.previous.url | relative_url }}"> &laquo; {{ page.previous.title }}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{ page.next.url }}">{{ page.next.title }} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>

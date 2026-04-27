@@ -79,19 +79,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-
-      - name: Restore gem cache
-        uses: actions/cache@v4
-        with:
-          path: vendor/bundle
-          key: gems-${{ runner.os }}-${{ hashFiles('Gemfile.lock') }}
-          restore-keys: |
-            gems-${{ runner.os }}-
-
-      - name: Install dependencies
-        run: |
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
+          bundler-cache: true
 
       - name: Generate preview config
         run: |
@@ -106,14 +94,16 @@ jobs:
       - name: HTML validation (${{ matrix.site.id }})
         run: |
           bundle exec htmlproofer ./_site \
-            --check-html \
-            --disable-external
+            --checks Links,Images,Scripts \
+            --disable-external \
+            --swap-urls "^/pr-${{ github.event.pull_request.number }}:"
 
       - name: Link check (${{ matrix.site.id }})
         run: |
           bundle exec htmlproofer ./_site \
             --disable-external \
-            --allow-hash-href
+            --allow-hash-href \
+            --swap-urls "^/pr-${{ github.event.pull_request.number }}:"
 
       - name: Install yq
         run: |
@@ -213,7 +203,7 @@ jobs:
             body += '|------|-------------|\n';
 
             for (const site of sites) {
-              const url = `http://${site.preview_bucket}.s3-website-${region}.amazonaws.com/pr-${prNumber}/`;
+              const url = `http://${site.preview_bucket}.s3-website.${region}.amazonaws.com/pr-${prNumber}/`;
               body += `| ${site.id} | [${url}](${url}) |\n`;
             }
 

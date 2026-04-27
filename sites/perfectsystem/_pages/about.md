@@ -1,35 +1,33 @@
 ---
 layout: page
-title: Mediumish Template for Jekyll
+title: O PerfectSystem.pl
 permalink: /about
-comments: true
+comments: false
 ---
 
 <div class="row justify-content-between">
 <div class="col-md-8 pr-5">
 
-<p>This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.</p>
+<h2>Chmura i DevOps dla startupów</h2>
 
-<p class="mb-5"><img class="shadow-lg" src="{{site.baseurl}}/assets/images/mediumish-jekyll-template.png" alt="jekyll template mediumish" /></p>
-<h4>Documentation</h4>
+<p>PerfectSystem.pl to portal wiedzy dla startupów i małych firm technologicznych, które chcą budować infrastrukturę IT w chmurze od podstaw lub migrować istniejące systemy. Publikujemy praktyczne przewodniki, tutoriale i analizy kosztowe — bez marketingowego szumu, z konkretnymi przykładami i kodem.</p>
 
-<p>Please, read the docs <a href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/">here</a>.</p>
+<h3>Dla kogo piszemy</h3>
 
-<h4>Questions or bug reports?</h4>
+<p>Nasi czytelnicy to CTO startupów, full-stack developerzy i inżynierowie DevOps, którzy chcą podejmować świadome decyzje technologiczne. Nie zakładamy, że masz dedykowany zespół infrastruktury — nasze przewodniki są pisane z myślą o małych zespołach, które muszą robić więcej mniejszymi zasobami.</p>
 
-<p>Head over to our <a href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Github repository</a>!</p>
+<h3>Tematyka</h3>
 
-</div>
+<p>Koncentrujemy się na dwóch obszarach:</p>
 
-<div class="col-md-4">
+<ul>
+<li><strong>Migracja do chmury</strong> — strategie, koszty, porównania dostawców (AWS, Azure, GCP), konteneryzacja, bazy danych w chmurze</li>
+<li><strong>Automatyzacja DevOps</strong> — CI/CD, Infrastructure as Code, monitoring, bezpieczeństwo pipeline, GitOps</li>
+</ul>
 
-<div class="sticky-top sticky-top-80">
-<h5>Buy me a coffee</h5>
+<h3>Kontakt</h3>
 
-<p>Thank you for your support! Your donation helps me to maintain and improve <a target="_blank" href="https://github.com/wowthemesnet/mediumish-theme-jekyll">Mediumish <i class="fab fa-github"></i></a>.</p>
+<p>Masz pytania, propozycje tematów lub chcesz współpracować? Napisz do nas przez formularz kontaktowy lub bezpośrednio na adres redakcji.</p>
 
-<a target="_blank" href="https://www.wowthemes.net/donate/" class="btn btn-danger">Buy me a coffee</a> <a target="_blank" href="https://bootstrapstarter.com/bootstrap-templates/template-mediumish-bootstrap-jekyll/" class="btn btn-warning">Documentation</a>
-
-</div>
 </div>
 </div>

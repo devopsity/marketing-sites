@@ -17,6 +17,16 @@ summary: "Migracja do chmury w dużych organizacjach wymaga starannego planowani
 faq:
   - q: "Jak długo trwa migracja do chmury w dużej organizacji?"
     a: "Pełna migracja enterprise trwa zazwyczaj od 6 do 24 miesięcy, w zależności od rozmiaru infrastruktury, liczby aplikacji i wybranej strategii migracji."
+definitions:
+  - term: "6R"
+    definition: "Sześć strategii migracji aplikacji do chmury: Rehost (lift and shift), Replatform (lift and reshape), Refactor (re-architect), Repurchase (zamiana na SaaS), Retire (wycofanie), Retain (pozostawienie on-premise)."
+  - term: "Landing zone"
+    definition: "Bezpieczne, wielokontowe środowisko bazowe w chmurze, przygotowane zgodnie z najlepszymi praktykami, stanowiące fundament dla migracji aplikacji."
+sources:
+  - url: "https://aws.amazon.com/cloud-migration/"
+    title: "AWS Cloud Migration"
+  - url: "https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-guide/welcome.html"
+    title: "AWS Large Migration Guide"
 ---
 
 ## Dlaczego przedsiębiorstwa przenoszą się do chmury
