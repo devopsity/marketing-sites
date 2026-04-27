@@ -3,7 +3,7 @@
 sites:
   - id: perfectsystem
     source_dir: sites/perfectsystem
-    domain: perfectsystem.pl
+    domain: blog.perfectsystem.pl
     lang: pl
     audience_segment: startups
     preview_bucket: perfectsystem-preview
@@ -13,7 +13,7 @@ sites:
 
   - id: o14
     source_dir: sites/o14
-    domain: o14.pl
+    domain: blog.o14.pl
     lang: pl
     audience_segment: enterprise
     preview_bucket: o14-preview

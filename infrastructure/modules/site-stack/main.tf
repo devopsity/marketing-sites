@@ -34,7 +34,7 @@ module "preview_bucket" {
 module "acm_certificate" {
   source = "../acm-certificate"
 
-  domain = var.domain
+  domain = var.cert_domain
 
   providers = {
     aws = aws.us_east_1
