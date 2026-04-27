@@ -1,0 +1,9 @@
+{% assign cta_url = page.backlink_target | default: site.backlink_cta.url %}
+{% assign cta_text = page.backlink_anchor | default: site.backlink_cta.text %}
+
+{% if cta_url and cta_text %}
+<aside class="cta-block" role="complementary">
+  <p>{{ site.backlink_cta.text | default: cta_text }}</p>
+  <a href="{{ cta_url }}" class="cta-link">{{ cta_text }}</a>
+</aside>
+{% endif %}

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<article class="product-content enterprise-article">
+
+    <header class="article-header">
+        <h1>{{ page.title }}</h1>
+    </header>
+
+    {% include geo-summary.html %}
+
+    {% if page.image %}
+    <img class="featured-image" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}" style="max-width: 100%; height: auto; margin: 1.5rem 0;">
+    {% endif %}
+
+    <div class="article-body service-details">
+        {{ content }}
+    </div>
+
+    {% include definitions.html %}
+    {% include sources.html %}
+
+    {% if page.faq %}
+        {% include faq.html %}
+    {% endif %}
+
+</article>

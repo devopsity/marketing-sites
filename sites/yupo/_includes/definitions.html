@@ -1,0 +1,11 @@
+{% if page.definitions and page.definitions.size > 0 %}
+<section class="definitions-section" aria-label="Definitions">
+  <h2>Definicje</h2>
+  <dl>
+    {% for item in page.definitions %}
+    <dt><dfn>{{ item.term }}</dfn></dt>
+    <dd>{{ item.definition }}</dd>
+    {% endfor %}
+  </dl>
+</section>
+{% endif %}

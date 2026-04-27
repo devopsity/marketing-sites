@@ -20,3 +20,13 @@ sites:
     production_bucket: o14-prod
     cloudfront_distribution_id: EXXXXXXXXXX
     terragrunt_env: o14
+
+  - id: yupo
+    source_dir: sites/yupo
+    domain: blog.yupo.pl
+    lang: pl
+    audience_segment: smb
+    preview_bucket: yupo-preview
+    production_bucket: yupo-prod
+    cloudfront_distribution_id: EXXXXXXXXXX
+    terragrunt_env: yupo

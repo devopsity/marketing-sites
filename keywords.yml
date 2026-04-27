@@ -34,3 +34,20 @@ keywords:
     audience_segment: enterprise
     search_intent: commercial
     status: planned
+
+  - keyword: "hosting dla firm"
+    cluster: hosting
+    site_id: yupo
+    language: pl
+    audience_segment: smb
+    search_intent: commercial
+    target_url: /hosting-dla-firm/
+    status: published
+
+  - keyword: "certyfikat SSL"
+    cluster: hosting
+    site_id: yupo
+    language: pl
+    audience_segment: smb
+    search_intent: informational
+    status: planned

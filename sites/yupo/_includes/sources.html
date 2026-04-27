@@ -1,0 +1,10 @@
+{% if page.sources and page.sources.size > 0 %}
+<section class="sources-section" aria-label="Sources">
+  <h2>Źródła</h2>
+  <ol>
+    {% for source in page.sources %}
+    <li><a href="{{ source.url }}" rel="nofollow noopener" target="_blank">{{ source.title }}</a></li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}

@@ -1,0 +1,9 @@
+{% if site.lang %}
+<link rel="alternate" hreflang="{{ site.lang }}" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+{% endif %}
+
+{% if page.devopsity_translations %}
+{% for translation in page.devopsity_translations %}
+<link rel="alternate" hreflang="{{ translation[0] }}" href="{{ translation[1] }}" />
+{% endfor %}
+{% endif %}
