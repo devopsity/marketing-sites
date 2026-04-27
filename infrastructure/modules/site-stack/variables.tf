@@ -4,7 +4,12 @@ variable "site_id" {
 }
 
 variable "domain" {
-  description = "Production domain name (e.g., perfectsystem.pl)"
+  description = "Production domain name (e.g., blog.perfectsystem.pl)"
+  type        = string
+}
+
+variable "cert_domain" {
+  description = "Root domain for ACM certificate (e.g., perfectsystem.pl). The cert covers this domain and *.cert_domain."
   type        = string
 }
 

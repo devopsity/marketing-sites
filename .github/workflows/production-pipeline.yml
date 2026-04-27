@@ -154,11 +154,23 @@ jobs:
           name: site-${{ matrix.site.id }}
           path: ./_site
 
+      - name: Debug secrets availability
+        run: |
+          if [ -z "${{ secrets.AWS_DEPLOY_ROLE_ARN }}" ]; then
+            echo "ERROR: AWS_DEPLOY_ROLE_ARN is empty"
+            exit 1
+          else
+            echo "AWS_DEPLOY_ROLE_ARN is set (length: ${#ROLE_ARN})"
+          fi
+        env:
+          ROLE_ARN: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_DEPLOY_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
+          audience: sts.amazonaws.com
 
       - name: Deploy to S3 production bucket
         run: |
