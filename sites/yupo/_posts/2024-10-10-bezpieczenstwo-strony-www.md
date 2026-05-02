@@ -113,7 +113,7 @@ Domyślnie WordPress pozwala na nieograniczoną liczbę prób logowania, co uła
 
 ## Monitoring i wykrywanie incydentów
 
-Nie możesz chronić się przed tym, czego nie widzisz. Monitoring strony pozwala szybko wykryć nieautoryzowane zmiany, podejrzaną aktywność i próby ataków.
+Nie możesz chronić się przed tym, czego nie widzisz. Monitoring strony pozwala szybko wykryć nieautoryzowane zmiany, podejrzaną aktywność i próby ataków. Dla firm, które nie mają zasobów na samodzielne monitorowanie, profesjonalne [utrzymanie infrastruktury chmurowej](https://devopsity.com/pl/uslugi/cloudops-maintenance/) obejmuje monitoring 24/7 i reagowanie na incydenty.
 
 ### Monitoring dostępności
 

@@ -199,7 +199,7 @@ Zacznij od monitoringu infrastruktury — Node Exporter i cAdvisor dają natychm
 
 Importuj gotowe dashboardy z Grafana.com zamiast budować od zera. Dostosuj je do swoich potrzeb po kilku tygodniach używania, gdy zrozumiesz, które metryki są najważniejsze dla Twojego systemu.
 
-Skonfiguruj alerty od pierwszego dnia — nawet proste alerty na dostępność serwisów i error rate są lepsze niż brak alertów. Iteruj na podstawie doświadczenia — dodawaj alerty po każdym incydencie, usuwaj te, które generują szum.
+Skonfiguruj alerty od pierwszego dnia — nawet proste alerty na dostępność serwisów i error rate są lepsze niż brak alertów. Iteruj na podstawie doświadczenia — dodawaj alerty po każdym incydencie, usuwaj te, które generują szum. Dla startupów bez dedykowanego zespołu operacyjnego, profesjonalny [monitoring i wsparcie 24/7](https://devopsity.com/pl/uslugi/cloudops-maintenance/) pozwala spać spokojnie, wiedząc że ktoś reaguje na incydenty nawet w nocy.
 
 Warto też zapoznać się z naszą ofertą [wdrożenia CI/CD i automatyzacji DevOps](/services/wdrozenie-ci-cd/), która obejmuje konfigurację monitoringu jako część kompleksowej automatyzacji. Jeśli szukasz wsparcia w budowie platformy observability, sprawdź [usługi observability od Devopsity](https://devopsity.com/pl/uslugi/observability/) — zespół pomoże dobrać narzędzia i skonfigurować monitoring dopasowany do Twojego systemu. Jeśli planujesz migrację do chmury, monitoring jest kluczowym elementem procesu — więcej w naszym [przewodniku po migracji do chmury](/pillars/migracja-do-chmury/).
 
