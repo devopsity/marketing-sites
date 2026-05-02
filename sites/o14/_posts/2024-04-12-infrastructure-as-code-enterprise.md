@@ -85,4 +85,4 @@ Wdrożenie IaC w organizacji z istniejącą infrastrukturą to wyzwanie. Terrafo
 
 Sprawdzone podejście to migracja inkrementalna: nowe zasoby tworzymy wyłącznie przez IaC, a istniejące importujemy stopniowo, zaczynając od najbardziej krytycznych komponentów. [Devopsity pomaga organizacjom enterprise w projektowaniu i wdrażaniu praktyk IaC](https://devopsity.com/pl/uslugi/konsulting/), od struktury modułów po integrację z pipeline CI/CD.
 
-Kluczowe jest, aby IaC nie był projektem jednorazowym, ale ciągłą praktyką. Infrastruktura ewoluuje razem z aplikacjami i potrzebami biznesowymi — kod infrastruktury musi ewoluować razem z nią.
+Kluczowe jest, aby IaC nie był projektem jednorazowym, ale ciągłą praktyką. Wdrożenie [infrastruktury jako kod](https://devopsity.com/pl/uslugi/chmura-pod-kontrola/) to fundament nowoczesnego zarządzania środowiskami chmurowymi. Infrastruktura ewoluuje razem z aplikacjami i potrzebami biznesowymi — kod infrastruktury musi ewoluować razem z nią.

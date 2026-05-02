@@ -45,7 +45,7 @@ Terraform to narzędzie Infrastructure as Code (IaC) od HashiCorp, które pozwal
 
 Dla startupów Terraform rozwiązuje trzy fundamentalne problemy. Po pierwsze, powtarzalność — środowisko staging jest identyczne z produkcją, bo powstaje z tego samego kodu. Po drugie, audytowalność — każda zmiana w infrastrukturze jest widoczna w historii Git, z autorem, datą i opisem. Po trzecie, odtwarzalność — gdy coś pójdzie nie tak, możesz odtworzyć całą infrastrukturę od zera w minuty zamiast dni.
 
-Bez IaC startup z trzema środowiskami (dev, staging, produkcja) ma trzy ręcznie skonfigurowane zestawy zasobów, które z czasem się rozjeżdżają. Nikt nie pamięta, dlaczego security group na produkcji ma inną regułę niż na staging. Terraform eliminuje ten problem — infrastruktura jest kodem, a kod jest źródłem prawdy.
+Bez IaC startup z trzema środowiskami (dev, staging, produkcja) ma trzy ręcznie skonfigurowane zestawy zasobów, które z czasem się rozjeżdżają. Nikt nie pamięta, dlaczego security group na produkcji ma inną regułę niż na staging. Terraform eliminuje ten problem — infrastruktura jest kodem, a kod jest źródłem prawdy. Podejście [zarządzanej infrastruktury chmurowej](https://devopsity.com/pl/uslugi/chmura-pod-kontrola/) pozwala zespołom skupić się na produkcie zamiast na gaszeniu pożarów.
 
 Ten artykuł jest częścią naszego [kompletnego przewodnika po automatyzacji DevOps dla startupów](/pillars/automatyzacja-devops-startupy/), który omawia wszystkie filary automatyzacji — od CI/CD po bezpieczeństwo pipeline.
 

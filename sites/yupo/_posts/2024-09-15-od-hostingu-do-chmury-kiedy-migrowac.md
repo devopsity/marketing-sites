@@ -73,7 +73,7 @@ Chmura działa w modelu pay-as-you-go — płacisz za faktycznie wykorzystane za
 
 Na hostingu współdzielonym dostawca zarządza wszystkim. Na VPS zarządzasz systemem operacyjnym i aplikacjami. W chmurze masz pełną kontrolę nad infrastrukturą, ale też pełną odpowiedzialność za jej konfigurację, bezpieczeństwo i optymalizację.
 
-Chmura wymaga nowych kompetencji — znajomości usług dostawcy (AWS, Azure, GCP), narzędzi Infrastructure as Code (Terraform, CloudFormation) i praktyk DevOps. Dla małej firmy bez dedykowanego zespołu IT to może być bariera.
+Chmura wymaga nowych kompetencji — znajomości usług dostawcy (AWS, Azure, GCP), narzędzi Infrastructure as Code (Terraform, CloudFormation) i praktyk DevOps. Dla małej firmy bez dedykowanego zespołu IT to może być bariera. Jeśli szukasz partnera do uporządkowania infrastruktury, sprawdź usługę [chmura pod kontrolą](https://devopsity.com/pl/uslugi/chmura-pod-kontrola/) od Devopsity.
 
 ### Skalowalność
 
